@@ -30,7 +30,7 @@ Meu foco está em desenvolver experiências incríveis, seja no **front-end**, c
 ---
 
 ## 🚀 **Como Acessar Meu Portfólio**
-Meu portfólio está disponível online! Você pode acessá-lo clicando [**aqui**](https://portifolio-dlu9-ngp985zr6-isaque16s-projects.vercel.app/).
+Meu portfólio está disponível online! Você pode acessá-lo clicando [**aqui**](https://portifolio-dlu9-hvow8yb76-isaque16s-projects.vercel.app/).
 
 ---
 
