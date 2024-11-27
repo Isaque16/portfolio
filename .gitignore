@@ -1,0 +1,6 @@
+*.local
+*.log
+/.vscode/
+dist
+node_modules
+TODOs.md
