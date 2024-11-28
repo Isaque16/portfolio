@@ -1,8 +1,10 @@
+@use "../base/mixins";
+
 // Section
 section {
   padding: 5rem 0rem;
 
-  @include respond(phone) {
+  @include mixins.respond(phone) {
     border: none;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -13,12 +15,12 @@ section {
     gap: 2rem;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr;
-    @include respond(tab-port) {
+    padding: 0 1.5rem;
+    @include mixins.respond(tab-port) {
       grid-template-columns: 1fr;
       grid-template-rows: auto;
     }
-    padding: 0 1.5rem;
-    @include respond(phone) {
+    @include mixins.respond(phone) {
       padding: 0;
     }
     & p + p {
@@ -34,20 +36,20 @@ section {
   padding: 0 1.5rem;
   margin: 0 auto;
   max-width: 1140px;
-  @include respond(tab-land) {
+  @include mixins.respond(tab-land) {
     max-width: 960px;
     width: 100%;
   }
-  @include respond(tab-port) {
+  @include mixins.respond(tab-port) {
     max-width: 720px;
     width: 100%;
     justify-content: center;
   }
-  @include respond(tab-port-sm) {
+  @include mixins.respond(tab-port-sm) {
     max-width: 720px;
     width: 100%;
   }
-  @include respond(phone) {
+  @include mixins.respond(phone) {
     max-width: 540px;
     width: 100%;
   }

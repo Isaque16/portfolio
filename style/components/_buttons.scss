@@ -1,8 +1,11 @@
+@use "../base/mixins";
+@use "../base/variables";
+
 /* Call to Action Button*/
 .cta-btn {
   display: inline-block;
   position: relative;
-  padding: 0.8rem $default-font-size;
+  padding: 0.8rem variables.$default-font-size;
   font-weight: bold;
   line-height: 1;
   z-index: 1;
@@ -11,7 +14,7 @@
   transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
   &:hover {
     box-shadow: 1.5px 1.5px 3px rgba(174, 174, 192, 0.4), -1px -1px 3px #ffffff;
-    @include respond(phone) {
+    @include mixins.respond(phone) {
       box-shadow: none;
     }
   }
@@ -21,8 +24,8 @@
     position: absolute;
     background-image: linear-gradient(
       135deg,
-      $primary-color 0%,
-      $secondary-color 100%
+      variables.$primary-color 0%,
+      variables.$secondary-color 100%
     );
     width: 0px;
     height: 100%;
@@ -30,7 +33,7 @@
     top: 0;
     z-index: -1;
     transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
-    @include respond(phone) {
+    @include mixins.respond(phone) {
       width: 0;
       height: 0;
       background-image: none;
@@ -40,29 +43,29 @@
 
 /* Hero Style */
 .cta-btn--hero {
-  @include supportColorForIE11();
   border: 2px solid transparent;
   border-image: linear-gradient(
     135deg,
-    $primary-color 0%,
-    $secondary-color 100%
+    variables.$primary-color 0%,
+    variables.$secondary-color 100%
   );
   border-image-slice: 1;
   // box-shadow: inset 1px 1px 2px 2px rgba(174, 174, 192, 0.15),
   //   inset -2px -2px 2px rgba(255, 255, 255, 0.7);
-  @include supportIE11() {
-    color: $secondary-color;
+  @include mixins.supportColorForIE11();
+  @include mixins.supportIE11() {
+    color: variables.$secondary-color;
     &:hover {
-      color: $white-color;
+      color: variables.$white-color;
     }
   }
 
   // Responsive Button hero style
-  @include respond(phone) {
+  @include mixins.respond(phone) {
     background-image: none;
-    border: 2px solid $secondary-color;
+    border: 2px solid variables.$secondary-color;
     box-shadow: none;
-    -webkit-text-fill-color: $secondary-color;
+    -webkit-text-fill-color: variables.$secondary-color;
   }
 
   &::after {
@@ -74,12 +77,12 @@
   }
 
   &:hover {
-    -webkit-text-fill-color: $white-color;
+    -webkit-text-fill-color: variables.$white-color;
     text-decoration: none;
 
     // Responsive Button hover hero style
-    @include respond(phone) {
-      -webkit-text-fill-color: $secondary-color;
+    @include mixins.respond(phone) {
+      -webkit-text-fill-color: variables.$secondary-color;
     }
 
     &::after {
@@ -87,22 +90,23 @@
     }
   }
 }
+
 /* Resume Style */
 .cta-btn--resume {
   border-radius: 0;
-  color: $white-color;
-  border: 2px solid $white-color;
+  color: variables.$white-color;
+  border: 2px solid variables.$white-color;
 
   &::after {
-    background: $white-color;
+    background: variables.$white-color;
   }
 
   &:hover {
-    color: $secondary-color;
+    color: variables.$secondary-color;
     text-decoration: none;
     box-shadow: none;
-    @include respond(phone) {
-      color: $white-color;
+    @include mixins.respond(phone) {
+      color: variables.$white-color;
     }
     &::after {
       width: 100%;
@@ -115,7 +119,7 @@
   box-shadow: inset 1px 1px 2px 2px rgba(174, 174, 192, 0.15),
     inset -2px -2px 2px rgba(255, 255, 255, 0.7);
   border: 2px solid transparent;
-  @include respond(phone) {
+  @include mixins.respond(phone) {
     border: none;
     box-shadow: 1.5px 1.5px 3px rgba(174, 174, 192, 0.4), -1px -1px 3px #ffffff;
   }

@@ -1,3 +1,5 @@
+@use "variables";
+
 // MEDIA QUERY MANAGER
 /*
 0 - 600px:          Phone
@@ -49,13 +51,13 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
 
 @mixin supportColorForIE11 {
   // Fall for text-gradient not supported in IE11
-  color: $secondary-color;
-  -webkit-text-fill-color: $secondary-color; // fallback
+  color: variables.$secondary-color;
+  -webkit-text-fill-color: variables.$secondary-color; // fallback
   @supports (background-clip: text) or (-webkit-background-clip: text) {
     background-image: linear-gradient(
       135deg,
-      $primary-color 0%,
-      $secondary-color 100%
+      variables.$primary-color 0%,
+      variables.$secondary-color 100%
     );
     -webkit-background-clip: text;
     background-clip: text;
