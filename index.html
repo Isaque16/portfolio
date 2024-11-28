@@ -25,10 +25,7 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <!-- Fill content with the URL of this portfolio you'll host -->
-    <meta
-      property="og:url"
-      content="https://portfolio-dlu9-2v8o2tmgw-isaque16s-projects.vercel.app/"
-    />
+    <meta property="og:url" content="https://isaque16-portfolio.vercel.app/" />
     <!-- Fill content with the title of your portfolio(Recommended to use what you put in <title> tag) -->
     <meta property="og:title" content="Isaque16 | Portfolio" />
     <!-- Give a short description that'll show up when you/someone shares your portfolio on different platform -->
@@ -37,12 +34,12 @@
       so that a thumbnail image of your portfolio is shown while shared on other platform -->
     <meta
       property="og:image"
-      content="https://portfolio-dlu9-2v8o2tmgw-isaque16s-projects.vercel.app/"
+      content="https://isaque16-portfolio.vercel.app/"
     />
 
     <!-- link tags -->
-    <link rel="preload" as="style" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="preload" as="style" href="./style/main.scss" />
+    <link rel="stylesheet" href="./style/main.scss" />
 
     <!-- FontAwesome Icons link -->
     <link
@@ -55,21 +52,6 @@
     <script defer src="./js/scrollreveal.min.js"></script>
     <script defer type="text/javascript" src="./js/scrollveal.js"></script>
 
-    <!-- Remove Google Analytics once you have your portfolio website set-up -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-122228201-4"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "UA-122228201-4");
-    </script>
     <!-- End of Google Analytics -->
   </head>
   <body>
@@ -96,7 +78,7 @@
     <!-- About Section -->
     <section id="about">
       <div class="container">
-        <h2 class="section-title">Sobre mim</h2>
+        <h2 class="section-title">Quem sou</h2>
         <div class="row about-wrapper">
           <div class="about-wrapper__image">
             <img
@@ -591,107 +573,45 @@
           class="contact-wrapper"
         >
           <div style="margin-bottom: 16px">
-            <label
-              style="
-                display: block;
-                font-size: large;
-                font-weight: bold;
-                margin-bottom: 8px;
-              "
-              >Contato</label
-            >
+            <label class="form_label">Contato</label>
             <input
               type="text"
               placeholder="Seu Contato"
-              name="email"
-              style="
-                width: 100%;
-                padding: 10px;
-                border: 1px solid #ccc;
-                border-radius: 10px;
-                box-sizing: border-box;
-              "
+              name="contato"
+              class="form_input"
             />
+            <p class="error-message"></p>
           </div>
           <div style="margin-bottom: 16px">
-            <label
-              style="
-                display: block;
-                font-size: large;
-                font-weight: bold;
-                margin-bottom: 8px;
-              "
-              >Nome do Projeto</label
-            >
+            <label class="form_label">Nome do Projeto</label>
             <input
               type="text"
               placeholder="Seu Projeto"
               name="nomeProjeto"
-              style="
-                width: 100%;
-                padding: 10px;
-                border: 1px solid #ccc;
-                border-radius: 10px;
-                box-sizing: border-box;
-              "
+              class="form_input"
             />
+            <p class="error-message"></p>
           </div>
           <div style="margin-bottom: 16px">
-            <label
-              style="
-                display: block;
-                font-size: large;
-                font-weight: bold;
-                margin-bottom: 8px;
-              "
-              >Seu Nome</label
-            >
+            <label class="form_label">Seu Nome</label>
             <input
               type="text"
               placeholder="Nome"
               name="contratante"
-              style="
-                width: 100%;
-                padding: 10px;
-                border: 1px solid #ccc;
-                border-radius: 10px;
-                box-sizing: border-box;
-              "
+              class="form_input"
             />
+            <p class="error-message"></p>
           </div>
           <div style="margin-bottom: 16px">
-            <label
-              style="
-                display: block;
-                font-size: large;
-                font-weight: bold;
-                margin-bottom: 8px;
-              "
-              >Mensagem</label
-            >
+            <label class="form_label">Mensagem</label>
             <textarea
               placeholder="Digite sua mensagem"
               name="mensagem"
-              style="
-                width: 100%;
-                padding: 10px;
-                border: 1px solid #ccc;
-                border-radius: 10px;
-                box-sizing: border-box;
-                min-height: 120px;
-                resize: vertical;
-              "
+              class="form_input"
             ></textarea>
+            <p class="error-message"></p>
           </div>
-          <input
-            style="
-              padding: 5px 20px 5px 20px;
-              border-radius: 20px;
-              font-size: large;
-            "
-            type="submit"
-            value="Enviar"
-          />
+          <input class="form_btn" type="submit" value="Enviar" />
         </form>
       </div>
     </section>
@@ -704,6 +624,14 @@
           <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
         </a>
         <div class="social-links">
+          <a
+            href="mailto:isaquecosta160@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="gmail"
+          >
+            <i class="fa-regular fa-envelope"></i>
+          </a>
           <a
             href="https://www.linkedin.com/in/isaque-costa-a0660230b/"
             target="_blank"
@@ -740,5 +668,6 @@
     </script>
     <script src="./js/vanilla-tilt.min.js"></script>
     <script type="text/javascript" src="./js/valtilt.js"></script>
+    <script type="module" src="js/form-validation.js"></script>
   </body>
 </html>
