@@ -17,7 +17,7 @@
     <meta name="description" content="Isaque16 | Portfolio" />
 
     <!-- Add a your png Logo to the public folder and change the href attr accordingly  -->
-    <link rel="icon" type="image/png" href="./devfolio-logo.png" />
+    <link rel="icon" type="image/png" href="/portfolio.png" />
 
     <!-- Add your primary-theme color for the value of content -->
     <meta name="theme-color" content="#36d1dc" />
@@ -51,22 +51,16 @@
     />
     <script defer src="./js/scrollreveal.min.js"></script>
     <script defer type="text/javascript" src="./js/scrollveal.js"></script>
-
+    <script defer type="module" src="./js/lang.js"></script>
     <!-- End of Google Analytics -->
   </head>
   <body>
     <!-- Hero Section -->
     <div id="hero">
       <section class="container">
-        <h1 class="hero-title">
-          Olá, me chamo <span class="text-color-main name">Isaque Costa</span>👋
-          <br />
-          Sou um desenvolvedor web full-stack apaixonado ❤️ por transformar
-          <span class="text-color-main name"> ideias em soluções </span>
-          digitais eficientes.
-        </h1>
+        <h1 class="hero-title"></h1>
         <p class="hero-cta">
-          <a class="cta-btn cta-btn--hero" href="#contact">Entre em contato</a>
+          <a class="cta-btn cta-btn--hero" href="#contact"></a>
         </p>
       </section>
       <a href="#about" class="scroll-down-link" aria-label="scroll-down">
@@ -78,7 +72,7 @@
     <!-- About Section -->
     <section id="about">
       <div class="container">
-        <h2 class="section-title">Quem sou</h2>
+        <h2 class="section-title"></h2>
         <div class="row about-wrapper">
           <div class="about-wrapper__image">
             <img
@@ -90,21 +84,7 @@
             />
           </div>
           <div class="about-wrapper__info">
-            <p class="about-wrapper__info-text">
-              Sou um desenvolvedor web full-stack apaixonado por criar
-              aplicações web. Atualmente estou cursando Sistemas de Informação
-              na Universidade Federal do Acre (UFAC), onde estou aprimorando
-              minhas habilidades e conhecimentos em tecnologias modernas de
-              desenvolvimento.
-            </p>
-            <p class="about-wrapper__info-text">
-              Estou sempre pronto para aprender algo novo e explorar diferentes
-              tecnologias para melhorar minhas habilidades e entregar as
-              melhores soluções possíveis. Adoro transformar ideias em produtos
-              funcionais. Quando não estou desenvolvendo, estou aprendendo sobre
-              novas tecnologias e explorando novas maneiras de otimizar
-              sistemas!
-            </p>
+            <p class="about-wrapper__info-text"></p>
             <!-- <span class="about-wrapper__cta">
               <a href="#" class="cta-btn cta-btn--resume">Currículo</a>
             </span> -->
@@ -117,7 +97,7 @@
     <!-- Contact Section -->
     <section>
       <div>
-        <h2 class="section-title">Principais Tecnologias</h2>
+        <h2 class="section-title"></h2>
         <div
           style="
             display: flex;
@@ -261,22 +241,14 @@
     <section id="projects">
       <div class="container">
         <div class="project-wrapper">
-          <h2 class="section-title dark-blue-text">Projetos</h2>
+          <h2 class="section-title dark-blue-text"></h2>
 
           <!-- Each .row is a project -->
           <article class="row">
             <div class="project-wrapper__text">
               <h3 class="project-wrapper__text-title">Landing Page Telemen</h3>
-              <p class="project-wrapper__text-info">
-                Esta Lading Page desenvolvida com
-                <a href="https://nuxt.com/">Nuxt.js</a>, feita para a empresa
-                <a
-                  href="https://www.instagram.com/telemensagem_rosadesarom_acre/reels/"
-                  >Telemensagem Rosa de Sarom AC</a
-                >. Este site foi criado com a finalidade de receber clientes,
-                reduzindo questionamentos e aumentando os agendamentos
-              </p>
-              <h4 style="font-size: medium">Tecnologias Utilizadas</h4>
+              <p class="project-wrapper__text-info"></p>
+              <h4 style="font-size: medium"></h4>
               <div
                 style="
                   display: flex;
@@ -375,15 +347,13 @@
                   href="https://landing-page-telemen.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >Vizualizar</a
-                >
+                  class="cta-btn cta-btn--hero cta-btn--projects view"
+                ></a>
                 <a
                   href="https://github.com/Isaque16/LandingPageTelemen"
                   target="_blank"
-                  class="cta-btn text-color-main"
-                  >Documentação</a
-                >
+                  class="cta-btn text-color-main docs"
+                ></a>
               </div>
             </div>
 
@@ -411,13 +381,8 @@
           <article class="row">
             <div class="project-wrapper__text">
               <h3 class="project-wrapper__text-title">Site Loja Presentes</h3>
-              <p class="project-wrapper__text-info">
-                Este é um projeto de E-commerce construído com
-                <a href="https://nextjs.org/">Next.js</a>. O sistema permite o
-                gerenciamento completo de produtos, clientes e pedidos. Além de
-                apresentar produtos e processar compras
-              </p>
-              <h4 style="font-size: medium">Tecnologias Utilizadas</h4>
+              <p class="project-wrapper__text-info"></p>
+              <h4 style="font-size: medium"></h4>
               <div
                 style="
                   display: flex;
@@ -501,15 +466,13 @@
                   href="#"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >Vizualizar</a
-                >
+                  class="cta-btn cta-btn--hero cta-btn--projects view"
+                ></a>
                 <a
                   href="https://github.com/Isaque16/SiteLojaPresentes"
                   target="_blank"
-                  class="cta-btn text-color-main"
-                  >Documentação</a
-                >
+                  class="cta-btn text-color-main docs"
+                ></a>
               </div>
             </div>
 
@@ -536,14 +499,13 @@
           <!-- Each .row is a project -->
           <article class="row">
             <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Seu projeto aqui</h3>
-              <p class="project-wrapper__text-info">Vamos trabalhar juntos!</p>
+              <h3 class="project-wrapper__text-title"></h3>
+              <p class="project-wrapper__text-info"></p>
               <div class="project-wrapper__text-btns">
                 <a
                   href="#contact"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >Contatar</a
-                >
+                  class="cta-btn cta-btn--hero cta-btn--projects contact-btn"
+                ></a>
               </div>
             </div>
 
@@ -551,10 +513,7 @@
               <span
                 style="font-size: 4em; font-weight: bolder"
                 class="text-color-main name"
-              >
-                O Pontapé inicial das <br />
-                suas ideias é aqui!
-              </span>
+              ></span>
             </div>
           </article>
           <!-- /END Project -->
@@ -566,24 +525,24 @@
     <!-- Contact Section -->
     <section id="contact">
       <div class="container">
-        <h2 class="section-title">Entre em contato</h2>
+        <h2 class="section-title"></h2>
         <form
           action="https://formsubmit.co/isaquecosta160@gmail.com"
           method="post"
           class="contact-wrapper"
         >
           <div style="margin-bottom: 16px">
-            <label class="form_label">Contato</label>
+            <label class="form_label"></label>
             <input
               type="text"
-              placeholder="Seu Contato"
+              placeholder=""
               name="contato"
               class="form_input"
             />
             <p class="error-message"></p>
           </div>
           <div style="margin-bottom: 16px">
-            <label class="form_label">Nome do Projeto</label>
+            <label class="form_label"></label>
             <input
               type="text"
               placeholder="Seu Projeto"
@@ -593,25 +552,25 @@
             <p class="error-message"></p>
           </div>
           <div style="margin-bottom: 16px">
-            <label class="form_label">Seu Nome</label>
+            <label class="form_label"></label>
             <input
               type="text"
-              placeholder="Nome"
+              placeholder=""
               name="contratante"
               class="form_input"
             />
             <p class="error-message"></p>
           </div>
           <div style="margin-bottom: 16px">
-            <label class="form_label">Mensagem</label>
+            <label class="form_label"></label>
             <textarea
-              placeholder="Digite sua mensagem"
+              placeholder=""
               name="mensagem"
               class="form_input"
             ></textarea>
             <p class="error-message"></p>
           </div>
-          <input class="form_btn" type="submit" value="Enviar" />
+          <input class="form_btn" type="submit" value="" />
         </form>
       </div>
     </section>
