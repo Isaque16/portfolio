@@ -40,6 +40,9 @@
       margin: 0;
       display: inline-block;
     }
+    .heart_animation {
+      animation: heartbeat 2s infinite ease-in-out;
+    }
 
     @include mixins.respond(tab-land) {
       font-size: 4rem;
@@ -129,5 +132,15 @@
   100% {
     opacity: 0;
     top: 90%;
+  }
+}
+
+@keyframes heartbeat {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
   }
 }

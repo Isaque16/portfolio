@@ -11,7 +11,7 @@ i18next.use(LanguageDetector).init({
     en: {
       translation: {
         "hero-section": {
-          "hero-text": "Hey, my name is <span class='text-color-main name'>Isaque Costa</span>👋 <br /> I am a full-stack web developer passionate ❤️ about turning <span class='text-color-main name'>ideas into efficient digital solutions</span>.",
+          "hero-text": "Hey, my name is <span class='text-color-main name'>Isaque Costa</span>👋 <br /> I am a full-stack web developer passionate <span class='heart_animation'>❤️</span> about turning <span class='text-color-main name'>ideas into efficient digital solutions</span>.",
           "btn-content": "Get in touch"
         },
         "about-section": {
