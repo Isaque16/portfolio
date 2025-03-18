@@ -18,6 +18,13 @@ i18next.use(LanguageDetector).init({
           "title": "About Me",
           "about-text": "I'm a full-stack web developer passionate about creating web applications. I'm currently pursuing a degree in Information Systems at the Federal University of Acre (UFAC), where I'm honing my skills and knowledge in modern development technologies. I'm always eager to learn something new and explore different technologies to improve my skills and deliver the best possible solutions. I love turning ideas into functional products. When I'm not coding, I'm learning about new technologies and exploring new ways to optimize system performance!"
         },
+        "formation-section": {
+          "title": "Academic Formation",
+          "institution1": "Federal University of Acre (UFAC)",
+          "course1": "Information Systems",
+          "institution2": "Web Academy Project",
+          "course2": "Full-Stack Web Training",
+        },
         "tech-section": {
           "title": "Main Technologies"
         },
@@ -57,6 +64,13 @@ i18next.use(LanguageDetector).init({
           "title": "Sobre Mim",
           "about-text": "Sou um desenvolvedor web full-stack apaixonado por criar aplicações web. Atualmente estou cursando Sistemas de Informação na Universidade Federal do Acre (UFAC), onde estou aprimorando minhas habilidades e conhecimentos em tecnologias modernas de desenvolvimento. Estou sempre disposto a aprender algo novo e explorar diferentes tecnologias para melhorar minhas habilidades e entregar as melhores soluções possíveis. Adoro transformar ideias em produtos funcionais. Quando não estou programando, estou aprendendo sobre novas tecnologias e explorando novas maneiras de otimizar o desempenho dos sistemas!"
         },
+        "formation-section": {
+          "title": "Formação Acadêmica",
+          "institution1": "Universidade Federal do Acre (UFAC)",
+          "course1": "Sistemas de Informação",
+          "institution2": "Projeto Web Academy",
+          "course2": "Capacitação Web Full-Stack",
+        },
         "tech-section": {
           "title": "Principais Tecnologias"
         },
@@ -95,6 +109,13 @@ i18next.use(LanguageDetector).init({
   // About Section
   document.querySelectorAll(".section-title")[0].innerHTML = i18next.t("about-section.title")
   document.querySelector(".about-wrapper__info-text").innerHTML = i18next.t("about-section.about-text")
+
+  // Formation Section
+  document.querySelector("h2#title").innerHTML = i18next.t("formation-section.title")
+  document.querySelectorAll(".instituicao-name")[0].innerHTML = i18next.t("formation-section.institution1")
+  document.querySelectorAll(".curso-name")[0].innerHTML = i18next.t("formation-section.course1")
+  document.querySelectorAll(".instituicao-name")[1].innerHTML = i18next.t("formation-section.institution2")
+  document.querySelectorAll(".curso-name")[1].innerHTML = i18next.t("formation-section.course2")
 
   // Main Tech Section
   document.querySelectorAll(".section-title")[1].innerHTML = i18next.t("tech-section.title")
