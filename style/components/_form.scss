@@ -3,8 +3,8 @@
 .form_label {
   display: block;
   font-size: large;
-  font-weight: bold;
   margin-bottom: 8px;
+  font-weight: bold;
 }
 
 .form_input {
@@ -13,6 +13,7 @@
   border: 1px solid #ccc;
   border-radius: 10px;
   box-sizing: border-box;
+
   @include mixins.respond(phone) {
     width: 100%;
   }
@@ -49,6 +50,7 @@
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
   transition-property: color, background-color, border-color, opacity,
     box-shadow, transform;
+
   @include mixins.respond(phone) {
     width: 100%;
   }

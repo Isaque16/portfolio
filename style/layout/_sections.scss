@@ -2,7 +2,7 @@
 
 // Section
 section {
-  padding: 5rem 0rem;
+  padding: 5rem 0;
 
   @include mixins.respond(phone) {
     border: none;
@@ -16,6 +16,7 @@ section {
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr;
     padding: 0 1.5rem;
+
     @include mixins.respond(tab-port) {
       grid-template-columns: 1fr;
       grid-template-rows: auto;
@@ -23,19 +24,23 @@ section {
     @include mixins.respond(phone) {
       padding: 0;
     }
+
     & p + p {
       margin-top: 1rem;
     }
+
     & span {
       margin-top: 2rem;
     }
   }
 }
+
 .container {
   width: 100%;
   padding: 0 1.5rem;
   margin: 0 auto;
   max-width: 1140px;
+
   @include mixins.respond(tab-land) {
     max-width: 960px;
     width: 100%;

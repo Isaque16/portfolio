@@ -1,9 +1,9 @@
+@use "../base/variables" as *;
 @use "../base/mixins";
-@use "../base/variables";
 
 #projects {
-  background-color: variables.$light-white;
-  color: variables.$dark-blue-text;
+  background-color: $light-white;
+  color: $dark-blue-text;
   margin-top: -15rem;
   padding-top: 15rem;
   @include mixins.respond(tab-land) {
@@ -37,7 +37,7 @@
       &-title {
         font-weight: bold;
         margin-bottom: 1.8rem;
-        font-size: variables.$mid-font-size;
+        font-size: $mid-font-size;
 
         @include mixins.respond(phone) {
           font-size: 2rem;

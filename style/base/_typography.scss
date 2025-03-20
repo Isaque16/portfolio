@@ -1,5 +1,5 @@
+@use "variables" as *;
 @use "mixins";
-@use "variables";
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 h1 {
@@ -8,7 +8,7 @@ h1 {
 
 p,
 a {
-  font-size: variables.$default-font-size;
+  font-size: $default-font-size;
 }
 
 a {
@@ -21,15 +21,16 @@ a:hover {
 
 .section-title {
   margin-bottom: 4.5rem;
-  font-size: variables.$big-font-size;
+  font-size: $big-font-size;
   text-transform: uppercase;
+
   @include mixins.respond(phone) {
     font-size: 2.8rem;
   }
 }
 
 .dark-blue-color {
-  color: variables.$dark-blue-text;
+  color: $dark-blue-text;
 }
 
 .text-color-main {
@@ -39,7 +40,7 @@ a:hover {
   @include mixins.respond(phone) {
     margin: 0;
     background-image: none;
-    -webkit-text-fill-color: variables.$secondary-color;
+    -webkit-text-fill-color: $secondary-color;
     box-shadow: none;
   }
 }
