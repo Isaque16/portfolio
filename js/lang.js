@@ -23,7 +23,7 @@ i18next.use(LanguageDetector).init({
           "institution1": "Federal University of Acre (UFAC)",
           "course1": "Information Systems",
           "institution2": "Web Academy Project",
-          "course2": "Full-Stack Web Training",
+          "course2": "Full-stack web development training",
         },
         "tech-section": {
           "title": "Main Technologies"
@@ -35,6 +35,7 @@ i18next.use(LanguageDetector).init({
           "docs-btn": "Documentation",
           "project1-content": "This landing page was developed with <a href='https://nuxt.com/'>Nuxt.js</a> for the company <a href='https://www.instagram.com/telemensagem_rosadesarom_acre/reels/'>Telemensagem Rosa de Sarom AC</a>. The website was created to help reduce customer inquiries and increase appointments.",
           "project2-content": "This is an e-commerce project built with <a href='https://nextjs.org/'>Next.js</a>. The system allows full management of products, customers, and orders, in addition to presenting products and processing purchases.",
+          "project3-content": "This Content Manager was developed by the Moto G team of class 6 of the <a href='https://www.instagram.com/webacademy.ufac/'>Web Academy</a> full-stack training project. It contains resources developed by the team during the course.",
           "customers-project-title": "Your project here",
           "call-to-action": "Let's work together!",
           "contact-btn": "Contact",
@@ -68,8 +69,8 @@ i18next.use(LanguageDetector).init({
           "title": "Formação Acadêmica",
           "institution1": "Universidade Federal do Acre (UFAC)",
           "course1": "Sistemas de Informação",
-          "institution2": "Projeto Web Academy",
-          "course2": "Capacitação Web Full-Stack",
+          "institution2": "Web Academy",
+          "course2": "Capacitação em desenvolvimento web full-stack",
         },
         "tech-section": {
           "title": "Principais Tecnologias"
@@ -81,6 +82,7 @@ i18next.use(LanguageDetector).init({
           "docs-btn": "Documentação",
           "project1-content": "Esta landing page foi desenvolvida com <a href='https://nuxt.com/'>Nuxt.js</a> para a empresa <a href='https://www.instagram.com/telemensagem_rosadesarom_acre/reels/'>Telemensagem Rosa de Sarom AC</a>. O site foi criado para reduzir dúvidas dos clientes e aumentar os agendamentos.",
           "project2-content": "Este é um projeto de e-commerce desenvolvido com <a href='https://nextjs.org/'>Next.js</a>. O sistema permite o gerenciamento completo de produtos, clientes e pedidos, além de apresentar produtos e processar compras.",
+          "project3-content": "Este Gerenciador de Conteúdo foi desenvolvido pelo time Moto G da turma 6 do projeto de capacitação full-stack <a href='https://www.instagram.com/webacademy.ufac/'>Web Academy</a>. Ele contém recursos desenvolvidos pela equipe durante o curso",
           "customers-project-title": "Seu projeto aqui",
           "call-to-action": "Vamos trabalhar juntos!",
           "contact-btn": "Contato",
@@ -128,9 +130,10 @@ i18next.use(LanguageDetector).init({
 
   document.querySelectorAll(".project-wrapper__text-info")[0].innerHTML = i18next.t("projects-section.project1-content")
   document.querySelectorAll(".project-wrapper__text-info")[1].innerHTML = i18next.t("projects-section.project2-content")
+  document.querySelectorAll(".project-wrapper__text-info")[2].innerHTML = i18next.t("projects-section.project3-content")
 
-  document.querySelectorAll(".project-wrapper__text-title")[2].innerHTML = i18next.t("projects-section.customers-project-title")
-  document.querySelectorAll(".project-wrapper__text-info")[2].innerHTML = i18next.t("projects-section.call-to-action")
+  document.querySelectorAll(".project-wrapper__text-title")[3].innerHTML = i18next.t("projects-section.customers-project-title")
+  document.querySelectorAll(".project-wrapper__text-info")[3].innerHTML = i18next.t("projects-section.call-to-action")
   document.querySelector(".contact-btn").innerHTML = i18next.t("projects-section.contact-btn");
   document.querySelector("span[style='font-size: 4em; font-weight: bolder']").innerHTML = i18next.t("projects-section.effect-phrase")
 

@@ -1,6 +1,7 @@
 *.local
 *.log
 /.vscode/
+/.idea/
 dist
 node_modules
 TODOs.md
