@@ -70,7 +70,17 @@
     gap: 2rem;
 
     @include mixins.respond(tab-port) {
+      flex-direction: column;
       justify-content: center;
+    }
+
+    #social-links {
+      display: flex;
+      gap: 2rem;
+
+      @include mixins.respond(tab-port) {
+        margin-top: 2rem;
+      }
     }
 
     & a {
@@ -87,13 +97,13 @@
         font-size: 2rem;
       }
 
-        &:hover {
-          transform: scale(1.1) translateY(-2px);
+      &:hover {
+        transform: scale(1.1) translateY(-2px);
 
-          .fa-linkedin {
-            color: #4875b4;
-          }
+        .fa-linkedin {
+          color: #4875b4;
         }
+      }
     }
   }
 }
@@ -132,7 +142,6 @@
     }
   }
 }
-
 
 @keyframes hidden {
   0% {

@@ -2,7 +2,7 @@
 
 .form_label {
   display: block;
-  font-size: large;
+  font-size: x-large;
   margin-bottom: 8px;
   font-weight: bold;
 }
@@ -13,6 +13,7 @@
   border: 1px solid #ccc;
   border-radius: 10px;
   box-sizing: border-box;
+  font-size: 1.7rem;
 
   @include mixins.respond(phone) {
     width: 100%;
@@ -25,26 +26,29 @@
 }
 
 .form_btn {
-  display: inline-flex;
   width: 25%;
   min-height: 3rem;
-  flex-shrink: 0;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
   border-radius: 20px;
   border-color: transparent;
   padding-left: 1rem;
   padding-right: 1rem;
-  text-align: center;
-  font-size: 1.4em;
-  line-height: 1em;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  flex-wrap: wrap;
   gap: 0.5rem;
+
+  text-align: center;
+  font-size: 2em;
+  line-height: 1em;
   font-weight: 600;
+  cursor: pointer;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
   text-decoration-line: none;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
