@@ -1,3 +1,5 @@
+import ScrollReveal from 'scrollreveal';
+
 const defaultProps = {
   easing: "cubic-bezier(0.5, 0, 0, 1)",
   distance: "30px",
@@ -6,8 +8,9 @@ const defaultProps = {
   desktop: true,
   mobile: true,
 };
+
 // Hero Section
-ScrollReveal().reveal(".hero-title", {
+ScrollReveal().reveal(".hero-section__title", {
   ...defaultProps,
   delay: 500,
   origin: window.innerWidth > 768 ? "left" : "bottom",
@@ -18,12 +21,12 @@ ScrollReveal().reveal(".name", {
   delay: 700,
   scale: 0,
 });
-ScrollReveal().reveal(".hero-cta", {
+ScrollReveal().reveal(".hero-section__cta", {
   ...defaultProps,
   delay: 1200,
   origin: window.innerWidth > 768 ? "left" : "bottom",
 });
-ScrollReveal().reveal(".scroll-down-link", {
+ScrollReveal().reveal(".hero__scroll-link", {
   ...defaultProps,
   delay: 2000,
   origin: "top",
@@ -40,7 +43,6 @@ ScrollReveal().reveal(".about-wrapper__image", {
   delay: 600,
   scale: 0.5,
 });
-
 ScrollReveal().reveal(".about-wrapper__info", {
   ...defaultProps,
   delay: 700,
@@ -67,7 +69,6 @@ ScrollReveal().reveal(".contact-wrapper", {
   ...defaultProps,
   delay: 600,
 });
-
 ScrollReveal().reveal(".fa", {
   ...defaultProps,
   delay: 500,
