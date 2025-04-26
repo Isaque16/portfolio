@@ -105,7 +105,7 @@ i18next.use(LanguageDetector).init({
   }
 }).then(() => {
   // Hero Section
-  document.querySelector(".hero-title").innerHTML = i18next.t('hero-section.hero-text');
+  document.querySelector(".hero-section__title").innerHTML = i18next.t('hero-section.hero-text');
   document.querySelector(".cta-btn").innerHTML = i18next.t("hero-section.btn-content")
 
   // About Section
@@ -114,10 +114,10 @@ i18next.use(LanguageDetector).init({
 
   // Formation Section
   document.querySelector("h2#title").innerHTML = i18next.t("formation-section.title")
-  document.querySelectorAll(".instituicao-name")[0].innerHTML = i18next.t("formation-section.institution1")
-  document.querySelectorAll(".curso-name")[0].innerHTML = i18next.t("formation-section.course1")
-  document.querySelectorAll(".instituicao-name")[1].innerHTML = i18next.t("formation-section.institution2")
-  document.querySelectorAll(".curso-name")[1].innerHTML = i18next.t("formation-section.course2")
+  document.querySelectorAll(".institution-name")[0].innerHTML = i18next.t("formation-section.institution1")
+  document.querySelectorAll(".course-name")[0].innerHTML = i18next.t("formation-section.course1")
+  document.querySelectorAll(".institution-name")[1].innerHTML = i18next.t("formation-section.institution2")
+  document.querySelectorAll(".course-name")[1].innerHTML = i18next.t("formation-section.course2")
 
   // Main Tech Section
   document.querySelectorAll(".section-title")[1].innerHTML = i18next.t("tech-section.title")

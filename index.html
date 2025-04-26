@@ -50,17 +50,17 @@
       rel="stylesheet"
     />
     <script defer src="assets/js/scrollreveal.min.js"></script>
-    <script defer src="assets/js/scrollveal.js" type="text/javascript"></script>
+    <script defer src="assets/js/scrollveal.js"></script>
     <script defer src="assets/js/lang.js" type="module"></script>
     <!-- End of Google Analytics -->
   </head>
   <body>
     <!-- Hero Section -->
-    <section id="hero">
+    <section id="hero-section">
       <div class="container">
-        <h1 class="hero-title"></h1>
-        <div class="hero-cta">
-          <a class="cta-btn cta-btn--hero" href="#contact"></a>
+        <h1 class="hero-section__title"></h1>
+        <div class="hero-section__cta">
+          <a class="cta-btn cta-btn--hero" href="#contact-section"></a>
           <div id="social-links">
             <a
               aria-label="linkedin"
@@ -82,15 +82,15 @@
         </div>
       </div>
       <div>
-        <a aria-label="scroll-down" class="scroll-down-link" href="#about">
-          <div class="scroll-down"></div>
+        <a aria-label="scroll-down" class="hero__scroll-link" href="#about-section">
+          <div class="hero__scroll"></div>
         </a>
       </div>
     </section>
     <!-- END Hero Section -->
 
     <!-- About Section -->
-    <section id="about">
+    <section id="about-section">
       <div class="container">
         <h2 class="section-title"></h2>
         <div class="row about-wrapper">
@@ -113,26 +113,26 @@
       </div>
 
       <!-- Formação Acadêmica Section -->
-      <div id="formacao-academica">
+      <div id="academic-formation">
         <h2 id="title"></h2>
-        <div class="formacao-academica-container">
+        <div class="academic-formation__container">
           <img
             alt="Responsive image"
-            class="instituicao-img"
+            class="institution-img"
             src="/images/ufac_logo.png"
           />
-          <h3 class="instituicao-name"></h3>
-          <h4 class="curso-name"></h4>
+          <h3 class="institution-name"></h3>
+          <h4 class="course-name"></h4>
           <p>2024 - on going</p>
         </div>
-        <div class="formacao-academica-container">
+        <div class="academic-formation__container">
           <img
             alt="Responsive image"
-            class="instituicao-img"
+            class="institution-img"
             src="/images/webacademy_logo.jpg"
           />
-          <h3 class="instituicao-name"></h3>
-          <h4 class="curso-name"></h4>
+          <h3 class="institution-name"></h3>
+          <h4 class="course-name"></h4>
           <p>2024 - 2025</p>
         </div>
       </div>
@@ -140,38 +140,36 @@
     <!-- /END About Section -->
 
     <!-- TechStack Section -->
-    <section>
-      <div>
-        <h2 class="section-title"></h2>
-        <div class="tech-stack-container">
-          <span>
-            <img alt="TypeScript" src="/icons/typescript.svg" width="70"/>
-          </span>
-          <span>
-            <img alt="Nextjs" src="/icons/nextdotjs.svg" width="70" />
-          </span>
-          <span>
-            <img alt="tRPC" src="/icons/trpc.svg" width="70" />
-          </span>
-          <span>
-            <img alt="PrismaORM" src="/icons/prisma.svg" width="70" />
-          </span>
-          <span>
-            <img alt="MongoDB" src="/icons/mongodb.svg" width="70" />
-          </span>
-          <span>
-            <img alt="MySQL" src="/icons/mysql.svg" width="70" />
-          </span>
-          <span>
-            <img alt="TailwindCSS" src="/icons/tailwindcss.svg" width="70" />
-          </span>
-        </div>
+    <section id="tech-stack-section">
+      <h2 class="section-title"></h2>
+      <div class="tech-stack-container">
+        <span>
+          <img alt="TypeScript" src="/icons/typescript.svg" width="70"/>
+        </span>
+        <span>
+          <img alt="Nextjs" src="/icons/nextdotjs.svg" width="70" />
+        </span>
+        <span>
+          <img alt="tRPC" src="/icons/trpc.svg" width="70" />
+        </span>
+        <span>
+          <img alt="PrismaORM" src="/icons/prisma.svg" width="70" />
+        </span>
+        <span>
+          <img alt="MongoDB" src="/icons/mongodb.svg" width="70" />
+        </span>
+        <span>
+          <img alt="MySQL" src="/icons/mysql.svg" width="70" />
+        </span>
+        <span>
+          <img alt="TailwindCSS" src="/icons/tailwindcss.svg" width="70" />
+        </span>
       </div>
     </section>
     <!-- END TechStack Section -->
 
     <!--Projects Section-->
-    <section id="projects">
+    <section id="projects-section">
       <div class="container">
         <div class="project-wrapper">
           <h2 class="section-title dark-blue-text"></h2>
@@ -190,7 +188,7 @@
                   <img alt="TypeScript" src="/icons/typescript.svg" width="35"/>
                 </span>
                 <span
-                  ><img alt="Nuxtjs" src="/icons/nuxtdotjs.svg" width="70" />
+                  ><img alt="Nuxtjs" src="/icons/nuxtdotjs.svg" width="45" />
                 </span>
                 <span
                   ><img alt="Vue.js" src="/icons/vuedotjs.svg" width="35" />
@@ -243,14 +241,7 @@
               <h3 class="project-wrapper__text-title">E-commerce</h3>
               <p class="project-wrapper__text-info"></p>
               <h4 style="font-size: medium"></h4>
-              <div
-                style="
-                  display: flex;
-                  flex-direction: row;
-                  flex-wrap: wrap;
-                  gap: 5px;
-                "
-              >
+              <div class="project-wrapper__tech-stack">
                 <span>
                   <img alt="Nextjs" src="/icons/nextdotjs.svg" width="40" />
                 </span>
@@ -310,14 +301,7 @@
               </h3>
               <p class="project-wrapper__text-info"></p>
               <h4 style="font-size: medium"></h4>
-              <div
-                style="
-                  display: flex;
-                  flex-direction: row;
-                  flex-wrap: wrap;
-                  gap: 5px;
-                "
-              >
+              <div class="project-wrapper__tech-stack" >
                 <span>
                   <img alt="HTML" src="/icons/html5.svg" width="40">
                 </span>
@@ -328,7 +312,7 @@
                   <img alt="Scss" src="/icons/sass.svg" width="40">
                 </span>
                 <span>
-                  <img alt="BootStrap" src="/icons/bootstrap.svg" width="35" />
+                  <img alt="BootStrap" src="/icons/bootstrap.svg" width="45" />
                 </span>
                 <span>
                   <img alt="Spring" src="/icons/spring.svg" width="40" />
@@ -399,7 +383,7 @@
     <!-- End Projects Section -->
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact-section">
       <div class="container">
         <h2 class="section-title"></h2>
         <form
@@ -497,7 +481,7 @@
       document.getElementById("year").textContent = new Date().getFullYear();
     </script>
     <script src="assets/js/vanilla-tilt.min.js"></script>
-    <script src="assets/js/valtilt.js" type="text/javascript"></script>
+    <script src="assets/js/valtilt.js"></script>
     <script src="assets/js/form-validation.js" type="module"></script>
   </body>
 </html>

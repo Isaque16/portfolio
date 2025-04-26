@@ -1,7 +1,7 @@
 @use "../base/variables" as *;
 @use "../base/mixins";
 
-#hero {
+#hero-section {
   min-height: 100vh;
   height: 100vh;
   padding: 0 5.6rem;
@@ -27,7 +27,7 @@
     padding: 0 $default-font-size;
   }
 
-  .hero-title {
+  .hero-section__title {
     font-size: 5.6rem;
     font-weight: 700;
     margin-bottom: 3.2rem;
@@ -58,7 +58,7 @@
     }
   }
 
-  .hero-cta {
+  .hero-section__cta {
     display: flex;
     align-items: center;
     gap: 2rem;
@@ -102,13 +102,13 @@
   }
 }
 
-.scroll-down-link {
+.hero__scroll-link {
   position: absolute;
   left: 50%;
   bottom: 20px;
   transform: translateX(-50%);
 
-  .scroll-down {
+  .hero__scroll {
     width: 30px;
     height: 50px;
     border: 2px solid black;
