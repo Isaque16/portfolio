@@ -64,6 +64,13 @@
       }
     }
 
+    &__tech-stack {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+
     &__image {
       width: 90%;
       margin: 0 auto;
