@@ -1,6 +1,10 @@
 @use "../base/variables" as *;
 @use "../base/mixins";
 
+.form-control {
+  margin-bottom: 16px;
+}
+
 #projects-section {
   background-color: $light-white;
   color: $dark-blue-text;
@@ -58,6 +62,8 @@
 
       &-btns {
         width: 100%;
+        margin-top: 1.5rem;
+
         display: flex;
         align-items: center;
         flex-wrap: wrap;

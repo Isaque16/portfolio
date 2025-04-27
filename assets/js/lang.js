@@ -43,12 +43,12 @@ i18next.use(LanguageDetector).init({
         },
         "contact-section": {
           "title": "Get in touch",
-          "label1": "Contact",
-          "inputPlaceholder1": "Your Contact",
-          "label2": "Project Name",
-          "inputPlaceholder2": "Your Project",
-          "label3": "Your Name",
-          "inputPlaceholder3": "Name",
+          "label1": "Your Name",
+          "inputPlaceholder1": "Name",
+          "label2": "Contact",
+          "inputPlaceholder2": "Your Contact(E-mail, Phone number, etc)",
+          "label3": "Project Name",
+          "inputPlaceholder3": "Your Project",
           "label4": "Message",
           "inputPlaceholder4": "Enter your message",
           "submit-btn": "Send"
@@ -90,12 +90,12 @@ i18next.use(LanguageDetector).init({
         },
         "contact-section": {
           "title": "Entre em contato",
-          "label1": "Contato",
-          "inputPlaceholder1": "Seu Contato",
-          "label2": "Nome do Projeto",
-          "inputPlaceholder2": "Seu Projeto",
-          "label3": "Seu Nome",
-          "inputPlaceholder3": "Nome",
+          "label1": "Seu Nome",
+          "inputPlaceholder1": "Nome",
+          "label2": "Contato",
+          "inputPlaceholder2": "Seu Contato(E-mail, Whatsapp, etc)",
+          "label3": "Nome do Projeto",
+          "inputPlaceholder3": "Seu Projeto",
           "label4": "Mensagem",
           "inputPlaceholder4": "Digite sua mensagem",
           "submit-btn": "Enviar"
@@ -147,5 +147,5 @@ i18next.use(LanguageDetector).init({
   document.querySelectorAll(".form_input")[2].placeholder = i18next.t("contact-section.inputPlaceholder3")
   document.querySelectorAll(".form_label")[3].innerHTML = i18next.t("contact-section.label4");
   document.querySelectorAll(".form_input")[3].placeholder = i18next.t("contact-section.inputPlaceholder4")
-  document.querySelector(".form_btn").innerHTML = i18next.t("contact-section.submit-btn");
+  document.querySelector(".cta-btn--form").innerHTML = i18next.t("contact-section.submit-btn");
 });

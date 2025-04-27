@@ -1,61 +1,51 @@
+@use "../base/variables" as *;
 @use "../base/mixins";
 
-.form_label {
-  display: block;
-  font-size: x-large;
-  margin-bottom: 8px;
-  font-weight: bold;
-}
-
-.form_input {
-  width: 50%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  box-sizing: border-box;
-  font-size: 1.7rem;
-
-  @include mixins.respond(phone) {
-    width: 100%;
+.form-control {
+  margin-bottom: 16px;
+  .form_label {
+    display: block;
+    font-size: x-large;
+    margin-bottom: 8px;
+    font-weight: bold;
   }
-}
 
-.error-message {
-  color: red;
-  padding-top: 5px;
-}
+  .form_input {
+    width: 50%;
+    padding: 12px 15px;
+    border: 2px solid transparent;
+    border-radius: 1.5rem;
+    box-sizing: border-box;
+    font-size: 1.7rem;
 
-.form_btn {
-  width: 25%;
-  min-height: 3rem;
-  border-radius: 20px;
-  border-color: transparent;
-  padding-left: 1rem;
-  padding-right: 1rem;
+    background:
+      linear-gradient(to right, #fff, #fff) padding-box,
+      linear-gradient(135deg, $primary-color 0%, $secondary-color 100%) border-box;
 
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+    box-shadow: inset 1px 1px 2px rgba(174, 174, 192, 0.15),
+    inset -1px -1px 2px rgba(255, 255, 255, 0.7);
 
-  text-align: center;
-  font-size: 2em;
-  line-height: 1em;
-  font-weight: 600;
-  cursor: pointer;
+    transition: all 0.3s ease-in-out;
 
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-  text-decoration-line: none;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
-  transition-property: color, background-color, border-color, opacity,
-    box-shadow, transform;
+    &:focus, &:hover {
+      outline: none;
+      background:
+        linear-gradient(to right, rgba(255, 255, 255, 0.97), rgba(255, 255, 255, 0.97)) padding-box,
+        linear-gradient(135deg, $secondary-color 0%, $primary-color 100%) border-box;
+      box-shadow: 1px 1px 3px rgba(174, 174, 192, 0.3),
+      -1px -1px 3px rgba(255, 255, 255, 0.8);
+      transform: translateY(-1px);
+      border: 2px solid transparent;
+    }
 
-  @include mixins.respond(phone) {
-    width: 100%;
+    @include mixins.respond(phone) {
+      width: 100%;
+      font-size: 1.6rem;
+    }
+  }
+
+  .error-message {
+    color: red;
+    padding-top: 5px;
   }
 }
