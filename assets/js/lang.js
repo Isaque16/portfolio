@@ -147,5 +147,5 @@ i18next.use(LanguageDetector).init({
   document.querySelectorAll(".form_input")[2].placeholder = i18next.t("contact-section.inputPlaceholder3")
   document.querySelectorAll(".form_label")[3].innerHTML = i18next.t("contact-section.label4");
   document.querySelectorAll(".form_input")[3].placeholder = i18next.t("contact-section.inputPlaceholder4")
-  document.querySelector(".form_btn").value = i18next.t("contact-section.submit-btn");
+  document.querySelector(".form_btn").innerHTML = i18next.t("contact-section.submit-btn");
 });

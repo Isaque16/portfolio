@@ -363,7 +363,7 @@
               <div class="project-wrapper__text-btns">
                 <a
                   class="cta-btn hero-section__cta-btn cta-btn--projects contact-btn"
-                  href="#contact"
+                  href="#contact-section"
                 ></a>
               </div>
             </div>
@@ -391,40 +391,43 @@
           method="post"
         >
           <div style="margin-bottom: 16px">
-            <label class="form_label" for="contato"></label>
-            <input class="form_input" id="contato" placeholder="" type="text" />
+            <label class="form_label" for="contact"></label>
+            <input class="form_input" id="contact" name="contact" placeholder="" type="text" />
             <p class="error-message"></p>
           </div>
           <div style="margin-bottom: 16px">
-            <label class="form_label" for="nomeProjeto"></label>
+            <label class="form_label" for="projectName"></label>
             <input
               class="form_input"
-              id="nomeProjeto"
+              id="projectName"
+              name="projectName"
               placeholder="Seu Projeto"
               type="text"
             />
             <p class="error-message"></p>
           </div>
           <div style="margin-bottom: 16px">
-            <label class="form_label" for="contratante"></label>
+            <label class="form_label" for="contractor"></label>
             <input
               class="form_input"
-              id="contratante"
+              id="contractor"
+              name="contractor"
               placeholder=""
               type="text"
             />
             <p class="error-message"></p>
           </div>
           <div style="margin-bottom: 16px">
-            <label class="form_label" for="mensagem"></label>
+            <label class="form_label" for="message"></label>
             <textarea
               class="form_input"
-              id="mensagem"
+              id="message"
+              name="message"
               placeholder=""
             ></textarea>
             <p class="error-message"></p>
           </div>
-          <input class="form_btn" type="submit" value="" />
+          <button class="form_btn" type="submit"></button>
         </form>
       </div>
     </section>
@@ -433,7 +436,7 @@
     <!-- Footer Section -->
     <footer class="footer">
       <div class="container">
-        <a aria-label="go back to top" class="back-to-top" href="#hero">
+        <a aria-label="go back to top" class="back-to-top" href="#hero-section">
           <i aria-hidden="true" class="fa fa-angle-up fa-2x"></i>
         </a>
         <div class="social-links">
