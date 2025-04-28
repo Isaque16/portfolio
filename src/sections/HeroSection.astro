@@ -1,31 +1,44 @@
-<section id="hero-section">
+<section id="hero-section" aria-labelledby="hero-title">
   <div class="container">
-    <h1 class="hero-section__title"></h1>
+    <h1 id="hero-title" class="hero-section__title"></h1>
     <div class="hero-section__cta">
-      <a class="cta-btn cta-btn--hero" href="#contact-section"></a>
-      <div id="social-links">
+      <a
+        class="cta-btn cta-btn--hero"
+        href="#contact-section"
+        role="button"
+        aria-label="Entre em contato"></a>
+      <div id="social-links" aria-label="Redes sociais">
         <a
-          aria-label="linkedin"
-          href="https://www.linkedin.com/in/isaque-costa-a0660230b/"
+          class="social-link"
+          aria-label="Perfil no LinkedIn"
+          href="https://www.linkedin.com/in/isaque-costa16/"
           rel="noopener noreferrer"
           target="_blank"
         >
-          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+          <span class="sr-only">LinkedIn</span>
         </a>
         <a
-          aria-label="github"
+          class="social-link"
+          aria-label="Perfil no GitHub"
           href="https://github.com/Isaque16"
           rel="noopener noreferrer"
           target="_blank"
         >
-          <i class="fa-brands fa-github"></i>
+          <i class="fa-brands fa-github" aria-hidden="true"></i>
+          <span class="sr-only">GitHub</span>
         </a>
       </div>
     </div>
   </div>
   <div>
-    <a aria-label="scroll-down" class="hero__scroll-link" href="#about-section">
-      <div class="hero__scroll"></div>
+    <a
+      class="hero__scroll-link"
+      href="#about-section"
+      aria-label="Rolar para seção sobre mim"
+    >
+      <div class="hero__scroll" aria-hidden="true"></div>
+      <span class="sr-only">Rolar para baixo</span>
     </a>
   </div>
 </section>
@@ -34,5 +47,5 @@
   import i18next from "../i18next/index";
 
   document.querySelector(".hero-section__title")!.innerHTML = i18next('heroSection.text');
-  document.querySelector(".cta-btn--hero")!.innerHTML = i18next("heroSection.btnContent")
+  document.querySelector(".cta-btn--hero")!.innerHTML = i18next("heroSection.btnContent");
 </script>

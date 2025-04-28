@@ -1,29 +1,33 @@
 ---
 import "../style/main.scss";
 import Footer from "../sections/Footer.astro";
+const siteUrl = "https://isaque16-portfolio.vercel.app";
 ---
-<html lang="pt">
+
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta content="IE=edge" http-equiv="X-UA-Compatible" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <!-- Preconnect para recursos externos -->
     <link href="https://fonts.gstatic.com" rel="preconnect" />
     <link href="https://cdnjs.cloudflare.com" rel="preconnect" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
 
     <!-- Title: Portfolio's title here -->
     <title>Isaque16 | Portfolio</title>
 
-    <link rel="alternate" hreflang="pt" href="https://isaque16-portfolio.vercel.app/pt" />
-    <link rel="alternate" hreflang="en" href="https://isaque16-portfolio.vercel.app/en" />
+    <!-- SEO Meta Tags -->
+    <meta content="Isaque16, Isaque Costa, Portfolio, Desenvolvedor Web, Front-end, Full-stack, JavaScript, TypeScript, Next.js" name="keywords" />
+    <meta content="Portfólio de Isaque Costa - Desenvolvedor Web especializado em JavaScript, TypeScript e tecnologias frontend" name="description" />
+    <link rel="canonical" href={siteUrl} />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Isaque Costa" />
 
-    <!-- Add some coding keywords below, Ex: (JavaScript, yourusername, etc.) -->
-    <meta content="Isaque16, Isaque Costa, Portfolio" name="keywords" />
-
-    <!-- Improve your SEO by adding a small description of you -->
-    <meta content="Isaque16 | Portfolio" name="description" />
-
-    <!-- Png Logo to the public folder and change the href attr accordingly  -->
+    <!-- Favicon -->
     <link href="/images/portfolio.png" rel="icon" type="image/png" />
+    <link rel="apple-touch-icon" href="/images/portfolio.png" />
 
     <!-- Primary-theme color for the value of content -->
     <meta content="#36d1dc" name="theme-color" />
@@ -31,7 +35,7 @@ import Footer from "../sections/Footer.astro";
     <!-- Open Graph / Facebook -->
     <meta content="website" property="og:type" />
     <!-- Fill content with the URL of this portfolio host -->
-    <meta content="https://isaque16-portfolio.vercel.app" property="og:url" />
+    <meta content={siteUrl} property="og:url" />
     <!-- Fill content with the title of your portfolio -->
     <meta content="Isaque16 | Portfolio" property="og:title" />
     <!-- Short description that'll show up when you/someone shares the portfolio on a different platform -->
@@ -39,7 +43,7 @@ import Footer from "../sections/Footer.astro";
     <!-- Add a thumbnail image in the public folder and fill the content attr with URL to that thumbnail
       so that a thumbnail image of your portfolio is shown while shared on another platform -->
     <meta
-      content="https://isaque16-portfolio.vercel.app"
+      content={siteUrl}
       property="og:image"
     />
 
@@ -51,6 +55,20 @@ import Footer from "../sections/Footer.astro";
       referrerpolicy="no-referrer"
       rel="stylesheet"
     />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Isaque Costa",
+        "url": "https://isaque16-portfolio.vercel.app",
+        "sameAs": [
+          "https://github.com/Isaque16",
+          "https://www.linkedin.com/in/isaque-costa16/"
+        ],
+        "jobTitle": "Desenvolvedor Web"
+      }
+    </script>
   </head>
   <body>
     <slot />

@@ -1,47 +1,66 @@
-<section id="contact-section">
+<section id="contact-section" aria-labelledby="contact-title">
   <div class="container">
-    <h2 class="section-title"></h2>
+    <h2 id="contact-title" class="section-title"></h2>
     <form
-      action="https://formsubmit.co/2eba05f08beb9137d4b20cfa715e883e "
+      action="https://formsubmit.co/2eba05f08beb9137d4b20cfa715e883e"
       class="contact-wrapper"
       method="post"
+      novalidate
     >
       <div class="form-control">
-        <label class="form_label" for="contractor"></label>
+        <label class="form_label" for="contractor" id="contractor-label"></label>
         <input
           class="form_input"
           id="contractor"
           name="contractor"
           placeholder=""
           type="text"
+          aria-required="true"
+          aria-describedby="contractor-error"
+          required
         />
-        <p class="error-message"></p>
+        <p id="contractor-error" class="error-message" aria-live="polite"></p>
       </div>
       <div class="form-control">
-        <label class="form_label" for="contact"></label>
-        <input class="form_input" id="contact" name="contact" placeholder="" type="text" />
-        <p class="error-message"></p>
+        <label class="form_label" for="contact" id="contact-label"></label>
+        <input
+          class="form_input"
+          id="contact"
+          name="contact"
+          placeholder=""
+          type="text"
+          aria-required="true"
+          aria-describedby="contact-error"
+          required
+        />
+        <p id="contact-error" class="error-message" aria-live="polite"></p>
       </div>
       <div class="form-control">
-        <label class="form_label" for="projectName"></label>
+        <label class="form_label" for="projectName" id="project-label"></label>
         <input
           class="form_input"
           id="projectName"
           name="projectName"
           placeholder=""
           type="text"
+          aria-required="true"
+          aria-describedby="project-error"
+          required
         />
-        <p class="error-message"></p>
+        <p id="project-error" class="error-message" aria-live="polite"></p>
       </div>
       <div class="form-control">
-        <label class="form_label" for="message"></label>
+        <label class="form_label" for="message" id="message-label"></label>
         <textarea
           class="form_input"
           id="message"
           name="message"
           placeholder=""
+          aria-required="true"
+          aria-describedby="message-error"
+          required
         ></textarea>
-        <p class="error-message"></p>
+        <p id="message-error" class="error-message" aria-live="polite"></p>
       </div>
       <button class="cta-btn--form" type="submit"></button>
     </form>

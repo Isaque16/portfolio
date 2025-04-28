@@ -3,53 +3,56 @@ import Image from "astro/components/Image.astro";
 const projectName = "CMS - Content Management System";
 ---
 
-<article class="row">
+<article class="row" aria-labelledby="cms-project-title">
   <div class="project-wrapper__text">
-    <h3 class="project-wrapper__text-title">
+    <h3 id="cms-project-title" class="project-wrapper__text-title">
       {projectName}
     </h3>
     <p class="project-wrapper__text-info"></p>
-    <h4 style="font-size: medium"></h4>
-    <div class="project-wrapper__tech-stack" >
-      <span>
-        <img alt="HTML" src="/icons/html5.svg" width="40">
-      </span>
-      <span>
-        <img alt="Angular" src="/icons/angular.svg" width="40">
-      </span>
-      <span>
-        <img alt="Scss" src="/icons/sass.svg" width="40">
-      </span>
-      <span>
-        <img alt="BootStrap" src="/icons/bootstrap.svg" width="45" />
-      </span>
-      <span>
+    <h4 id="cms-tech-title" style="font-size: medium"></h4>
+    <ul
+      class="project-wrapper__tech-stack"
+      aria-labelledby="cms-tech-title"
+    >
+      <li>
+        <img alt="HTML5" src="/icons/html5.svg" width="40" />
+        <span class="sr-only">HTML5</span>
+      </li>
+      <li>
+        <img alt="Angular" src="/icons/angular.svg" width="40" />
+        <span class="sr-only">Angular</span>
+      </li>
+      <li>
+        <img alt="SCSS" src="/icons/sass.svg" width="40" />
+        <span class="sr-only">SCSS</span>
+      </li>
+      <li>
+        <img alt="Bootstrap" src="/icons/bootstrap.svg" width="45" />
+        <span class="sr-only">Bootstrap</span>
+      </li>
+      <li>
         <img alt="Spring" src="/icons/spring.svg" width="40" />
-      </span>
-      <span>
+        <span class="sr-only">Spring</span>
+      </li>
+      <li>
         <img alt="MySQL" src="/icons/mysql.svg" width="50" />
-      </span>
-    </div>
+        <span class="sr-only">MySQL</span>
+      </li>
+    </ul>
   </div>
 
   <div class="project-wrapper__image">
-    <a
-      href="https://github.com/Isaque16/SiteLojaPresentes"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      <div class="thumbnail rounded">
-        <Image
-          alt={projectName}
-          class="img-fluid"
-          height="767"
-          src="/images/gerenciador.png"
-          format="png"
-          width="1366"
-          loading="eager"
-        />
-      </div>
-    </a>
+    <div class="thumbnail rounded">
+      <Image
+        alt="Captura de tela do sistema de gerenciamento de conteúdo mostrando o painel administrativo"
+        class="img-fluid"
+        height="767"
+        src="/images/gerenciador.png"
+        format="png"
+        width="1366"
+        loading="eager"
+      />
+    </div>
   </div>
 </article>
 

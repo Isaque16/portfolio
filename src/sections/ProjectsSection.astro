@@ -4,29 +4,31 @@ import ECommerce from "../projects/ECommerce.astro";
 import ContentManager from "../projects/ContentManager.astro";
 ---
 
-<section id="projects-section">
+<section id="projects-section" aria-labelledby="projects-title">
   <div class="container">
     <div class="project-wrapper">
-      <h2 class="section-title dark-blue-text"></h2>
+      <h2 id="projects-title" class="section-title dark-blue-text"></h2>
 
       <LandingPageTelemen />
       <ECommerce />
       <ContentManager />
 
       <!-- Project Section -->
-      <article class="row">
+      <article class="row" aria-labelledby="custom-project-title">
         <div class="project-wrapper__text">
-          <h3 class="project-wrapper__text-title"></h3>
+          <h3 id="custom-project-title" class="project-wrapper__text-title"></h3>
           <p class="project-wrapper__text-info"></p>
           <div class="project-wrapper__text-btns">
             <a
               class="cta-btn hero-section__cta-btn cta-btn--projects contact-btn"
               href="#contact-section"
+              role="button"
+              aria-label="Entre em contato para seu projeto personalizado"
             ></a>
           </div>
         </div>
 
-        <div>
+        <div aria-hidden="true">
           <span
             class="text-color-main name"
             style="font-size: 4em; font-weight: bolder"
@@ -51,12 +53,16 @@ import ContentManager from "../projects/ContentManager.astro";
   document.querySelector(".contact-btn")!.innerHTML = i18next("projectsSection.contactBtn");
   document.querySelector("span[style='font-size: 4em; font-weight: bolder']")!.innerHTML = i18next("projectsSection.effectPhrase")
 
-  const tilt = Array.from(document.querySelectorAll<HTMLElement>(".rounded"));
-  VanillaTilt.init(tilt, {
-    max: 3,
-    speed: 500,
-    scale: 1.05,
-    glare: true,
-    "max-glare": 0.3,
-  });
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const tiltElements = Array.from(document.querySelectorAll<HTMLElement>(".rounded"));
+    if (tiltElements.length > 0) {
+      VanillaTilt.init(tiltElements, {
+        max: 3,
+        speed: 500,
+        scale: 1.05,
+        glare: true,
+        "max-glare": 0.3,
+      });
+    }
+  }
 </script>

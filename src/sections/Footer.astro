@@ -1,43 +1,61 @@
-<footer class="footer">
+<footer id="main-footer" class="footer" role="contentinfo">
   <div class="container">
-    <a aria-label="go back to top" class="back-to-top" href="#hero-section">
+    <a class="back-to-top" href="#hero-section" aria-label="Voltar ao topo da página">
       <i aria-hidden="true" class="fa fa-angle-up fa-2x"></i>
+      <span class="sr-only">Voltar ao topo</span>
     </a>
-    <div class="social-links">
-      <a
-        aria-label="gmail"
-        href="mailto:isaquecosta160@gmail.com"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        <i class="fa-regular fa-envelope"></i>
-      </a>
-      <a
-        aria-label="linkedin"
-        href="https://www.linkedin.com/in/isaque-costa-a0660230b/"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        <i class="fa-brands fa-linkedin"></i>
-      </a>
-      <a
-        aria-label="github"
-        href="https://github.com/Isaque16"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        <i class="fa-brands fa-github"></i>
-      </a>
-    </div>
-    <hr />
+    <nav aria-label="Links de redes sociais">
+      <ul class="social-links">
+        <li>
+          <a
+            href="mailto:isaquecosta160@gmail.com"
+            rel="noopener noreferrer"
+            target="_blank"
+            aria-label="Enviar e-mail para isaquecosta160@gmail.com"
+          >
+            <i aria-hidden="true" class="fa-regular fa-envelope"></i>
+            <span class="sr-only">E-mail</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/isaque-costa-a0660230b/"
+            rel="noopener noreferrer"
+            target="_blank"
+            aria-label="Visitar perfil do LinkedIn de Isaque Costa"
+          >
+            <i aria-hidden="true" class="fa-brands fa-linkedin"></i>
+            <span class="sr-only">LinkedIn</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://github.com/Isaque16"
+            rel="noopener noreferrer"
+            target="_blank"
+            aria-label="Visitar perfil do GitHub de Isaque16"
+          >
+            <i aria-hidden="true" class="fa-brands fa-github"></i>
+            <span class="sr-only">GitHub</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <hr aria-hidden="true" />
     <p class="footer__text">
-      &copy; <span id="year"></span> - Template by
+      &copy; <span id="year"></span> - Template por
       <a
         href="https://github.com/AnilSeervi"
         rel="noopener noreferrer"
         target="_blank"
+        aria-label="Visitar o perfil do GitHub de Anil Seervi"
       >Anil Seervi</a
-      >. <br />Made with &hearts;
+      >. <br />Feito com <span aria-hidden="true">&hearts;</span><span class="sr-only">amor</span>
     </p>
   </div>
 </footer>
+
+<script>
+  // Atualiza o ano automaticamente
+  document.getElementById("year")!.textContent = new Date().getFullYear().toString();
+</script>

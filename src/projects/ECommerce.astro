@@ -3,33 +3,43 @@ import Image from "astro/components/Image.astro";
 const projectName = "E-commerce";
 ---
 
-<article class="row">
+<article class="row" aria-labelledby="ecommerce-project-title">
   <div class="project-wrapper__text">
-    <h3 class="project-wrapper__text-title">{projectName}</h3>
+    <h3 id="ecommerce-project-title" class="project-wrapper__text-title">{projectName}</h3>
     <p class="project-wrapper__text-info"></p>
-    <h4 style="font-size: medium"></h4>
-    <div class="project-wrapper__tech-stack">
-      <span>
+    <h4 id="ecommerce-tech-title" style="font-size: medium"></h4>
+    <ul
+      class="project-wrapper__tech-stack"
+      aria-labelledby="ecommerce-tech-title"
+    >
+      <li>
         <img alt="Nextjs" src="/icons/nextdotjs.svg" width="40" />
-      </span>
-      <span>
+        <span class="sr-only">Next.js</span>
+      </li>
+      <li>
         <img alt="tRPC" src="/icons/trpc.svg" width="40" />
-      </span>
-      <span>
+        <span class="sr-only">tRPC</span>
+      </li>
+      <li>
         <img alt="MongoDB" src="/icons/mongodb.svg" width="40" />
-      </span>
-      <span>
+        <span class="sr-only">MongoDB</span>
+      </li>
+      <li>
         <img alt="TailwindCSS" src="/icons/tailwindcss.svg" width="40" />
-      </span>
-      <span>
+        <span class="sr-only">TailwindCSS</span>
+      </li>
+      <li>
         <img alt="Cypress" src="/icons/cypress.svg" width="40" />
-      </span>
-    </div>
+        <span class="sr-only">Cypress</span>
+      </li>
+    </ul>
     <div class="project-wrapper__text-btns">
       <a
         class="cta-btn text-color-main docs"
         href="https://github.com/Isaque16/SiteLojaPresentes"
         target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Ver código-fonte do projeto E-commerce no GitHub"
       ></a>
     </div>
   </div>
@@ -39,10 +49,11 @@ const projectName = "E-commerce";
       href="https://github.com/Isaque16/SiteLojaPresentes"
       rel="noopener noreferrer"
       target="_blank"
+      aria-label="Ver repositório do projeto E-commerce"
     >
       <div class="thumbnail rounded">
         <Image
-          alt={projectName}
+          alt="Captura de tela do projeto E-commerce mostrando a interface da loja"
           class="img-fluid"
           height="767"
           src="/images/lojapresentes.png"

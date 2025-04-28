@@ -2,13 +2,13 @@
 import Image from "astro/components/Image.astro";
 ---
 
-<section id="about-section">
+<section id="about-section" aria-labelledby="about-title">
   <div class="container">
-    <h2 class="section-title"></h2>
+    <h2 id="about-title" class="section-title"></h2>
     <div class="row about-wrapper">
       <div class="about-wrapper__image">
         <Image
-          alt="Profile Image"
+          alt="Foto de perfil de Isaque Costa"
           class="img-fluid"
           height="350"
           src="/images/profile.jpg"
@@ -20,28 +20,33 @@ import Image from "astro/components/Image.astro";
       <div class="about-wrapper__info">
         <p class="about-wrapper__info-text"></p>
         <span class="about-wrapper__cta">
-          <a href="/isaque-curriculo-fullstack.pdf" class="cta-btn cta-btn--resume"></a>
+          <a
+            href="/isaque-curriculo-fullstack.pdf"
+            class="cta-btn cta-btn--resume"
+            aria-label="Baixar meu currículo em PDF"
+            download>
+          </a>
         </span>
       </div>
     </div>
   </div>
 
   <!-- Formação Acadêmica Section -->
-  <div id="academic-formation">
-    <h2 id="title"></h2>
+  <section id="academic-formation" aria-labelledby="formation-title">
+    <h2 id="formation-title"></h2>
     <div class="academic-formation__container">
       <img
-        alt="Universidade federal do acre"
+        alt="Logo da Universidade Federal do Acre"
         class="institution-img"
         src="/images/ufac_logo.png"
       />
       <h3 class="institution-name"></h3>
       <h4 class="course-name"></h4>
-      <p>2024 - on going</p>
+      <p>2024 - <span aria-label="em andamento">on going</span></p>
     </div>
     <div class="academic-formation__container">
       <img
-        alt="Responsive image"
+        alt="Logo da WebAcademy"
         class="institution-img"
         src="/images/webacademy_logo.jpg"
       />
@@ -49,7 +54,7 @@ import Image from "astro/components/Image.astro";
       <h4 class="course-name"></h4>
       <p>2024 - 2025</p>
     </div>
-  </div>
+  </section>
 </section>
 
 <script>
@@ -61,7 +66,7 @@ import Image from "astro/components/Image.astro";
   document.querySelector(".cta-btn--resume")!.innerHTML = i18next("aboutSection.resumeBtn");
 
   // Formation Section
-  document.querySelector("#title")!.innerHTML = i18next("formationSection.title");
+  document.querySelector("#formation-title")!.innerHTML = i18next("formationSection.title");
 
   document.querySelectorAll(".institution-name")[0].innerHTML = i18next("formationSection.institution1");
   (document.querySelectorAll(".institution-img")[0] as HTMLImageElement).alt = i18next("formationSection.institution1");
