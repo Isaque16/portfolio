@@ -2,12 +2,12 @@
 @use "base/variables";
 @use "base/mixins";
 @use "base/typography";
+@use "layout/footer";
 @use "components/buttons";
+@use "components/form";
 @use "layout/sections";
 @use "sections/hero";
 @use "sections/tech-stack";
 @use "sections/about";
 @use "sections/projects";
 @use "sections/contact";
-@use "./components/form";
-@use "layout/footer";

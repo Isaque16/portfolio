@@ -1,0 +1,62 @@
+---
+import LandingPageTelemen from "../projects/LandingPageTelemen.astro";
+import ECommerce from "../projects/ECommerce.astro";
+import ContentManager from "../projects/ContentManager.astro";
+---
+
+<section id="projects-section">
+  <div class="container">
+    <div class="project-wrapper">
+      <h2 class="section-title dark-blue-text"></h2>
+
+      <LandingPageTelemen />
+      <ECommerce />
+      <ContentManager />
+
+      <!-- Project Section -->
+      <article class="row">
+        <div class="project-wrapper__text">
+          <h3 class="project-wrapper__text-title"></h3>
+          <p class="project-wrapper__text-info"></p>
+          <div class="project-wrapper__text-btns">
+            <a
+              class="cta-btn hero-section__cta-btn cta-btn--projects contact-btn"
+              href="#contact-section"
+            ></a>
+          </div>
+        </div>
+
+        <div>
+          <span
+            class="text-color-main name"
+            style="font-size: 4em; font-weight: bolder"
+          ></span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<script>
+  import i18next from "../i18next/index";
+  import VanillaTilt from 'vanilla-tilt';
+
+  document.querySelectorAll(".section-title")[2].innerHTML = i18next("projectsSection.title")
+  document.querySelectorAll("h4[style='font-size: medium']").forEach(techTitle => techTitle.innerHTML = i18next("projectsSection.techStackTitle"))
+  document.querySelectorAll(".view").forEach(btnContent => btnContent.innerHTML = i18next("projectsSection.viewBtn"))
+  document.querySelectorAll(".docs").forEach(btnContent => btnContent.innerHTML = i18next("projectsSection.docsBtn"))
+
+  document.querySelectorAll(".project-wrapper__text-title")[3].innerHTML = i18next("projectsSection.customersProjectTitle")
+  document.querySelectorAll(".project-wrapper__text-info")[3].innerHTML = i18next("projectsSection.callToAction")
+  document.querySelector(".contact-btn")!.innerHTML = i18next("projectsSection.contactBtn");
+  document.querySelector("span[style='font-size: 4em; font-weight: bolder']")!.innerHTML = i18next("projectsSection.effectPhrase")
+
+  const tilt = Array.from(document.querySelectorAll<HTMLElement>(".rounded"));
+  VanillaTilt.init(tilt, {
+    max: 3,
+    speed: 500,
+    scale: 1.05,
+    glare: true,
+    "max-glare": 0.3,
+  });
+</script>

@@ -1,0 +1,38 @@
+<section id="hero-section">
+  <div class="container">
+    <h1 class="hero-section__title"></h1>
+    <div class="hero-section__cta">
+      <a class="cta-btn cta-btn--hero" href="#contact-section"></a>
+      <div id="social-links">
+        <a
+          aria-label="linkedin"
+          href="https://www.linkedin.com/in/isaque-costa-a0660230b/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a
+          aria-label="github"
+          href="https://github.com/Isaque16"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div>
+    <a aria-label="scroll-down" class="hero__scroll-link" href="#about-section">
+      <div class="hero__scroll"></div>
+    </a>
+  </div>
+</section>
+
+<script>
+  import i18next from "../i18next/index";
+
+  document.querySelector(".hero-section__title")!.innerHTML = i18next('heroSection.text');
+  document.querySelector(".cta-btn--hero")!.innerHTML = i18next("heroSection.btnContent")
+</script>

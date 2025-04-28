@@ -1,0 +1,52 @@
+{
+  "heroSection": {
+    "text": "Olá, me chamo <span class='text-color-main name'>Isaque Costa</span>👋 <br /> Sou um desenvolvedor web full-stack apaixonado ❤️ por transformar <span class='text-color-main name'>ideias em soluções</span> digitais eficientes.",
+    "btnContent": "Entre em Contato"
+  },
+  "aboutSection": {
+    "title": "Sobre Mim",
+    "text": "Sou um desenvolvedor web full-stack apaixonado por criar aplicações web. Atualmente estou cursando Sistemas de Informação na Universidade Federal do Acre (UFAC), onde estou aprimorando minhas habilidades e conhecimentos em tecnologias modernas de desenvolvimento. Estou sempre disposto a aprender algo novo e explorar diferentes tecnologias para melhorar minhas habilidades e entregar as melhores soluções possíveis. Adoro transformar ideias em produtos funcionais. Quando não estou programando, estou aprendendo sobre novas tecnologias e explorando novas maneiras de otimizar o desempenho dos sistemas!",
+    "resumeBtn": "Currículo"
+  },
+  "formationSection": {
+    "title": "Formação Acadêmica",
+    "institution1": "Universidade Federal do Acre (UFAC)",
+    "course1": "Sistemas de Informação",
+    "institution2": "Web Academy",
+    "course2": "Capacitação em desenvolvimento web full-stack"
+  },
+  "techSection": {
+    "title": "Principais Tecnologias"
+  },
+  "projectsSection": {
+    "title": "Meus Projetos",
+    "techStackTitle": "Tecnologias Utilizadas",
+    "viewBtn": "Visualizar",
+    "docsBtn": "Documentação",
+    "project1Content": "Esta landing page foi desenvolvida com <a href='https://nuxt.com/'>Nuxt.js</a> para a empresa <a href='https://www.instagram.com/telemensagem_rosadesarom_acre/reels/'>Telemensagem Rosa de Sarom AC</a>. O site foi criado para reduzir dúvidas dos clientes e aumentar os agendamentos.",
+    "project2Content": "Este é um projeto de e-commerce desenvolvido com <a href='https://nextjs.org/'>Next.js</a>. O sistema permite o gerenciamento completo de produtos, clientes e pedidos, além de apresentar produtos e processar compras.",
+    "project3Content": "Este Gerenciador de Conteúdo foi desenvolvido pelo time Moto G da turma 6 do projeto de capacitação full-stack <a href='https://www.instagram.com/webacademy.ufac/'>Web Academy</a>. Ele contém recursos desenvolvidos pela equipe durante o curso",
+    "customersProjectTitle": "Seu projeto aqui",
+    "callToAction": "Vamos trabalhar juntos!",
+    "contactBtn": "Contato",
+    "effectPhrase": "O pontapé inicial das <br/> suas ideias é aqui!"
+  },
+  "contactSection": {
+    "title": "Entre em contato",
+    "label1": "Seu Nome",
+    "inputPlaceholder1": "Nome",
+    "label2": "Contato",
+    "inputPlaceholder2": "Seu Contato(E-mail, Whatsapp, etc)",
+    "label3": "Nome do Projeto",
+    "inputPlaceholder3": "Seu Projeto",
+    "label4": "Mensagem",
+    "inputPlaceholder4": "Digite sua mensagem",
+    "submitBtn": "Enviar",
+    "errors": {
+      "contact": "O campo de contato é obrigatório.",
+      "project": "O campo do nome do projeto é obrigatório.",
+      "name": "O campo do seu nome é obrigatório.",
+      "message": "A mensagem não pode estar vazia."
+    }
+  }
+}

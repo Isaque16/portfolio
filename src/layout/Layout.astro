@@ -1,0 +1,63 @@
+---
+import "../style/main.scss";
+import Footer from "../sections/Footer.astro";
+---
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://cdnjs.cloudflare.com" rel="preconnect" />
+
+    <!-- Title: Portfolio's title here -->
+    <title>Isaque16 | Portfolio</title>
+
+    <link rel="alternate" hreflang="pt" href="https://isaque16-portfolio.vercel.app/pt" />
+    <link rel="alternate" hreflang="en" href="https://isaque16-portfolio.vercel.app/en" />
+
+    <!-- Add some coding keywords below, Ex: (JavaScript, yourusername, etc.) -->
+    <meta content="Isaque16, Isaque Costa, Portfolio" name="keywords" />
+
+    <!-- Improve your SEO by adding a small description of you -->
+    <meta content="Isaque16 | Portfolio" name="description" />
+
+    <!-- Png Logo to the public folder and change the href attr accordingly  -->
+    <link href="/images/portfolio.png" rel="icon" type="image/png" />
+
+    <!-- Primary-theme color for the value of content -->
+    <meta content="#36d1dc" name="theme-color" />
+
+    <!-- Open Graph / Facebook -->
+    <meta content="website" property="og:type" />
+    <!-- Fill content with the URL of this portfolio host -->
+    <meta content="https://isaque16-portfolio.vercel.app" property="og:url" />
+    <!-- Fill content with the title of your portfolio -->
+    <meta content="Isaque16 | Portfolio" property="og:title" />
+    <!-- Short description that'll show up when you/someone shares the portfolio on a different platform -->
+    <meta content="Portfólio de Isaque Costa" property="og:description" />
+    <!-- Add a thumbnail image in the public folder and fill the content attr with URL to that thumbnail
+      so that a thumbnail image of your portfolio is shown while shared on another platform -->
+    <meta
+      content="https://isaque16-portfolio.vercel.app"
+      property="og:image"
+    />
+
+    <!-- FontAwesome Icons link -->
+    <link
+      crossorigin="anonymous"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      referrerpolicy="no-referrer"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <slot />
+    <Footer />
+  </body>
+</html>
+
+<script>
+  import "../assets/js/scrollveal";
+</script>

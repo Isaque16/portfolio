@@ -1,0 +1,59 @@
+---
+import Image from "astro/components/Image.astro";
+const projectName = "CMS - Content Management System";
+---
+
+<article class="row">
+  <div class="project-wrapper__text">
+    <h3 class="project-wrapper__text-title">
+      {projectName}
+    </h3>
+    <p class="project-wrapper__text-info"></p>
+    <h4 style="font-size: medium"></h4>
+    <div class="project-wrapper__tech-stack" >
+      <span>
+        <img alt="HTML" src="/icons/html5.svg" width="40">
+      </span>
+      <span>
+        <img alt="Angular" src="/icons/angular.svg" width="40">
+      </span>
+      <span>
+        <img alt="Scss" src="/icons/sass.svg" width="40">
+      </span>
+      <span>
+        <img alt="BootStrap" src="/icons/bootstrap.svg" width="45" />
+      </span>
+      <span>
+        <img alt="Spring" src="/icons/spring.svg" width="40" />
+      </span>
+      <span>
+        <img alt="MySQL" src="/icons/mysql.svg" width="50" />
+      </span>
+    </div>
+  </div>
+
+  <div class="project-wrapper__image">
+    <a
+      href="https://github.com/Isaque16/SiteLojaPresentes"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div class="thumbnail rounded">
+        <Image
+          alt={projectName}
+          class="img-fluid"
+          height="767"
+          src="/images/gerenciador.png"
+          format="png"
+          width="1366"
+          loading="eager"
+        />
+      </div>
+    </a>
+  </div>
+</article>
+
+<script>
+  import i18next from "../i18next/index";
+  document.querySelectorAll(".project-wrapper__text-info")[2]!.innerHTML = i18next("projectsSection.project3Content");
+</script>

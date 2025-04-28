@@ -13,19 +13,19 @@ Meu foco está em desenvolver experiências incríveis, seja no **front-end**, c
 ---
 
 ## 🛠️ **Habilidades**
-- **Front-end**: HTML, TypeScript, Next.js, Nuxt.js, TailwindCSS, Bootstrap  
-- **Back-end**: Angular, Node.js, Express, tRPC, Prisma  
-- **Banco de Dados**: MongoDB, MySQL  
-- **Outras Ferramentas**: Git, Figma, Docker 
+- **Front-end**: HTML, TypeScript, Next.js, Nuxt.js, TailwindCSS, Bootstrap
+- **Back-end**: Angular, Node.js, Express, tRPC, Prisma
+- **Banco de Dados**: MongoDB, MySQL
+- **Outras Ferramentas**: Git, Figma, Docker
 
 ---
 
 ## 📚 **Projetos em Destaque**
 - **[Projeto 1 - Landing Page Telemen](https://github.com/Isaque16/LandingPageTelemen)**  
   Esta Lading Page desenvolvida com Nuxt.js, feita para a empresa Telemensagem Rosa de Sarom AC. Este site foi criado com a finalidade de receber clientes, reduzindo questionamentos e aumentando os agendamentos
-  
+
 - **[Projeto 2 - Site Loja Presentes](https://github.com/Isaque16/SiteLojaPresentes)**  
- Este é um projeto de E-commerce construído com Next.js. O sistema permite o gerenciamento completo de produtos, clientes e pedidos. Além de apresentar produtos e processar compras  
+  Este é um projeto de E-commerce construído com Next.js. O sistema permite o gerenciamento completo de produtos, clientes e pedidos. Além de apresentar produtos e processar compras
 
 ---
 
@@ -35,7 +35,7 @@ Meu portfólio está disponível online! Você pode acessá-lo clicando [**aqui*
 ---
 
 ## 📩 **Contato**
-Se quiser trocar uma ideia, colaborar ou discutir algum projeto, aqui estão meus contatos:  
-- **Email**: isaquecosta160@gmail.com  
+Se quiser trocar uma ideia, colaborar ou discutir algum projeto, aqui estão meus contatos:
+- **Email**: isaquecosta160@gmail.com
 - **LinkedIn**: [Isaque no LinkedIn](https://www.linkedin.com/in/isaque-costa-a0660230b/)
 - **GitHub**: [@Isaque16](https://github.com/Isaque16)

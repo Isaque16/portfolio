@@ -1,0 +1,99 @@
+<section id="contact-section">
+  <div class="container">
+    <h2 class="section-title"></h2>
+    <form
+      action="https://formsubmit.co/2eba05f08beb9137d4b20cfa715e883e "
+      class="contact-wrapper"
+      method="post"
+    >
+      <div class="form-control">
+        <label class="form_label" for="contractor"></label>
+        <input
+          class="form_input"
+          id="contractor"
+          name="contractor"
+          placeholder=""
+          type="text"
+        />
+        <p class="error-message"></p>
+      </div>
+      <div class="form-control">
+        <label class="form_label" for="contact"></label>
+        <input class="form_input" id="contact" name="contact" placeholder="" type="text" />
+        <p class="error-message"></p>
+      </div>
+      <div class="form-control">
+        <label class="form_label" for="projectName"></label>
+        <input
+          class="form_input"
+          id="projectName"
+          name="projectName"
+          placeholder=""
+          type="text"
+        />
+        <p class="error-message"></p>
+      </div>
+      <div class="form-control">
+        <label class="form_label" for="message"></label>
+        <textarea
+          class="form_input"
+          id="message"
+          name="message"
+          placeholder=""
+        ></textarea>
+        <p class="error-message"></p>
+      </div>
+      <button class="cta-btn--form" type="submit"></button>
+    </form>
+  </div>
+</section>
+
+<script>
+  import i18next from "../i18next/index";
+
+  document.querySelectorAll(".section-title")[3].innerHTML = i18next("contactSection.title")
+  document.querySelectorAll(".form_label")[0].innerHTML = i18next("contactSection.label1");
+  (document.querySelectorAll(".form_input")[0] as HTMLInputElement).placeholder = i18next("contactSection.inputPlaceholder1")
+  document.querySelectorAll(".form_label")[1].innerHTML = i18next("contactSection.label2");
+  (document.querySelectorAll(".form_input")[1] as HTMLInputElement).placeholder = i18next("contactSection.inputPlaceholder2")
+  document.querySelectorAll(".form_label")[2].innerHTML = i18next("contactSection.label3");
+  (document.querySelectorAll(".form_input")[2] as HTMLInputElement).placeholder = i18next("contactSection.inputPlaceholder3")
+  document.querySelectorAll(".form_label")[3].innerHTML = i18next("contactSection.label4");
+  (document.querySelectorAll(".form_input")[3] as HTMLInputElement).placeholder = i18next("contactSection.inputPlaceholder4")
+  document.querySelector(".cta-btn--form")!.innerHTML = i18next("contactSection.submitBtn");
+
+  document.querySelector(".contact-wrapper")!.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const fields = [
+      { field: "input[name=contact]", message: i18next("contactSection.errors.contact") },
+      { field: "input[name=projectName]", message: i18next("contactSection.errors.project") },
+      { field: "input[name=contractor]", message: i18next("contactSection.errors.name") },
+      { field: "textarea[name=message]", message: i18next("contactSection.errors.message") },
+    ];
+
+    let hasError = false;
+
+    // Limpa mensagens de erro
+    document.querySelectorAll(".error-message").forEach((msg) => (msg.textContent = ""));
+
+    // Valida os campos
+    fields.forEach(({ field, message }) => {
+      const input = document.querySelector(field) as HTMLInputElement | HTMLTextAreaElement;
+      if (input) {
+        switch (true) {
+          case !input.value.trim():
+            const errorElement = input.nextElementSibling;
+            if (errorElement) {
+              errorElement.textContent = message;
+              hasError = true;
+            }
+            break;
+        }
+      }
+    });
+
+    // Se não houver erros, submete o formulário
+    if (!hasError) (e.target as HTMLFormElement).submit();
+  });
+</script>

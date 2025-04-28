@@ -1,0 +1,70 @@
+---
+import Image from "astro/components/Image.astro";
+const projectName = "Landing Page Telemen";
+---
+
+<article class="row">
+<div class="project-wrapper__text">
+  <h3 class="project-wrapper__text-title">{projectName}</h3>
+  <p class="project-wrapper__text-info"></p>
+  <h4 style="font-size: medium"></h4>
+  <div class="project-wrapper__tech-stack">
+    <span>
+      <img alt="HTML5" src="/icons/html5.svg" width="40" />
+    </span>
+    <span>
+      <img alt="TypeScript" src="/icons/typescript.svg" width="35"/>
+    </span>
+    <span>
+      <img alt="Nuxtjs" src="/icons/nuxtdotjs.svg" width="45" />
+    </span>
+    <span>
+      <img alt="Vue.js" src="/icons/vuedotjs.svg" width="35" />
+    </span>
+    <span>
+      <img alt="Node.js" src="/icons/nodedotjs.svg" width="40" />
+    </span>
+    <span>
+      <img alt="TailwindCSS" src="/icons/tailwindcss.svg" width="40" />
+    </span>
+  </div>
+  <div class="project-wrapper__text-btns">
+    <a
+      class="cta-btn cta-btn--projects view"
+      href="https://landing-page-telemen.vercel.app/"
+      rel="noopener noreferrer"
+      target="_blank"
+    ></a>
+    <a
+      class="cta-btn text-color-main docs"
+      href="https://github.com/Isaque16/LandingPageTelemen"
+      target="_blank"
+    ></a>
+  </div>
+</div>
+
+<div class="project-wrapper__image">
+  <a
+    href="https://landing-page-telemen.vercel.app/"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    <div class="thumbnail rounded">
+      <Image
+        alt={projectName}
+        class="img-fluid"
+        height="767"
+        src="/images/landingpage.png"
+        format="png"
+        width="1366"
+        loading="eager"
+      />
+    </div>
+  </a>
+</div>
+</article>
+
+<script>
+  import i18next from "../i18next/index";
+  document.querySelector(".project-wrapper__text-info")!.innerHTML = i18next("projectsSection.project1Content")
+</script>

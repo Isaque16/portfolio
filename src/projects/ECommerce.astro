@@ -1,0 +1,61 @@
+---
+import Image from "astro/components/Image.astro";
+const projectName = "E-commerce";
+---
+
+<article class="row">
+  <div class="project-wrapper__text">
+    <h3 class="project-wrapper__text-title">{projectName}</h3>
+    <p class="project-wrapper__text-info"></p>
+    <h4 style="font-size: medium"></h4>
+    <div class="project-wrapper__tech-stack">
+      <span>
+        <img alt="Nextjs" src="/icons/nextdotjs.svg" width="40" />
+      </span>
+      <span>
+        <img alt="tRPC" src="/icons/trpc.svg" width="40" />
+      </span>
+      <span>
+        <img alt="MongoDB" src="/icons/mongodb.svg" width="40" />
+      </span>
+      <span>
+        <img alt="TailwindCSS" src="/icons/tailwindcss.svg" width="40" />
+      </span>
+      <span>
+        <img alt="Cypress" src="/icons/cypress.svg" width="40" />
+      </span>
+    </div>
+    <div class="project-wrapper__text-btns">
+      <a
+        class="cta-btn text-color-main docs"
+        href="https://github.com/Isaque16/SiteLojaPresentes"
+        target="_blank"
+      ></a>
+    </div>
+  </div>
+
+  <div class="project-wrapper__image">
+    <a
+      href="https://github.com/Isaque16/SiteLojaPresentes"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div class="thumbnail rounded">
+        <Image
+          alt={projectName}
+          class="img-fluid"
+          height="767"
+          src="/images/lojapresentes.png"
+          format="png"
+          width="1366"
+          loading="eager"
+        />
+      </div>
+    </a>
+  </div>
+</article>
+
+<script>
+  import i18next from "../i18next/index";
+  document.querySelectorAll(".project-wrapper__text-info")[1]!.innerHTML = i18next("projectsSection.project2Content");
+</script>

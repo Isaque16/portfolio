@@ -1,0 +1,55 @@
+{
+  "heroSection": {
+    "text": "Hey, my name is <span class='text-color-main name'>Isaque Costa</span>👋 <br /> I am a full-stack web developer passionate <span class='heart_animation'>❤️</span> about turning <span class='text-color-main name'>ideas into efficient digital solutions</span>.",
+    "btnContent": "Get in touch"
+  },
+  "aboutSection": {
+    "title": "About Me",
+    "text": "I'm a full-stack web developer passionate about creating web applications. I'm currently pursuing a degree in Information Systems at the Federal University of Acre (UFAC), where I'm honing my skills and knowledge in modern development technologies. I'm always eager to learn something new and explore different technologies to improve my skills and deliver the best possible solutions. I love turning ideas into functional products. When I'm not coding, I'm learning about new technologies and exploring new ways to optimize system performance!",
+    "resumeBtn": "Resume"
+  },
+  "formationSection": {
+    "title": "Academic Formation",
+    "institution1": "Federal University of Acre (UFAC)",
+    "course1": "Information Systems",
+    "institution2": "Web Academy Project",
+    "course2": "Full-stack web development training"
+  },
+  "techSection": {
+    "title": "Main Technologies"
+  },
+  "projectsSection": {
+    "title": "My Projects",
+    "techStackTitle": "Technologies Used",
+    "viewBtn": "View",
+    "docsBtn": "Documentation",
+    "project1Content":
+    "This landing page was developed with <a href='https://nuxt.com/'>Nuxt.js</a> for the company <a href='https://www.instagram.com/telemensagem_rosadesarom_acre/reels/'>Telemensagem Rosa de Sarom AC</a>. The website was created to help reduce customer inquiries and increase appointments.",
+    "project2Content":
+    "This is an e-commerce project built with <a href='https://nextjs.org/'>Next.js</a>. The system allows full management of products, customers, and orders, in addition to presenting products and processing purchases.",
+    "project3Content":
+    "This Content Manager was developed by the Moto G team of class 6 of the <a href='https://www.instagram.com/webacademy.ufac/'>Web Academy</a> full-stack training project. It contains resources developed by the team during the course.",
+    "customersProjectTitle": "Your project here",
+    "callToAction": "Let's work together!",
+    "contactBtn": "Contact",
+    "effectPhrase": "The kickstart for <br/> your ideas are here!"
+  },
+  "contactSection": {
+    "title": "Get in touch",
+    "label1": "Your Name",
+    "inputPlaceholder1": "Name",
+    "label2": "Contact",
+    "inputPlaceholder2": "Your Contact(E-mail, Phone number, etc)",
+    "label3": "Project Name",
+    "inputPlaceholder3": "Your Project",
+    "label4": "Message",
+    "inputPlaceholder4": "Enter your message",
+    "submitBtn": "Send",
+    "errors": {
+      "contact": "Contact field is required.",
+      "project": "Project name field is required.",
+      "name": "Your name field is required.",
+      "message": "Message cannot be empty."
+    }
+  }
+}
