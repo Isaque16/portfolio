@@ -1,51 +1,62 @@
 @use "../base/variables" as *;
 @use "../base/mixins";
+form {
+  .form-control {
+    margin-bottom: 16px;
+    .form_label {
+      display: block;
+      font-size: x-large;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
 
-.form-control {
-  margin-bottom: 16px;
-  .form_label {
-    display: block;
-    font-size: x-large;
-    margin-bottom: 8px;
-    font-weight: bold;
-  }
-
-  .form_input {
-    width: 50%;
-    padding: 12px 15px;
-    border: 2px solid transparent;
-    border-radius: 1.5rem;
-    box-sizing: border-box;
-    font-size: 1.7rem;
-
-    background:
-      linear-gradient(to right, #fff, #fff) padding-box,
-      linear-gradient(135deg, $primary-color 0%, $secondary-color 100%) border-box;
-
-    box-shadow: inset 1px 1px 2px rgba(174, 174, 192, 0.15),
-    inset -1px -1px 2px rgba(255, 255, 255, 0.7);
-
-    transition: all 0.3s ease-in-out;
-
-    &:focus, &:hover {
-      outline: none;
-      background:
-        linear-gradient(to right, rgba(255, 255, 255, 0.97), rgba(255, 255, 255, 0.97)) padding-box,
-        linear-gradient(135deg, $secondary-color 0%, $primary-color 100%) border-box;
-      box-shadow: 1px 1px 3px rgba(174, 174, 192, 0.3),
-      -1px -1px 3px rgba(255, 255, 255, 0.8);
-      transform: translateY(-1px);
+    .form_input {
+      width: 50%;
+      padding: 12px 15px;
       border: 2px solid transparent;
+      border-radius: 1.5rem;
+      box-sizing: border-box;
+      font-size: 1.7rem;
+
+      background:
+        linear-gradient(to right, #fff, #fff) padding-box,
+        linear-gradient(135deg, $primary-color 0%, $secondary-color 100%)
+          border-box;
+
+      box-shadow:
+        inset 1px 1px 2px rgba(174, 174, 192, 0.15),
+        inset -1px -1px 2px rgba(255, 255, 255, 0.7);
+
+      transition: all 0.3s ease-in-out;
+
+      &:focus,
+      &:hover {
+        outline: none;
+        background:
+          linear-gradient(
+              to right,
+              rgba(255, 255, 255, 0.97),
+              rgba(255, 255, 255, 0.97)
+            )
+            padding-box,
+          linear-gradient(135deg, $secondary-color 0%, $primary-color 100%)
+            border-box;
+        box-shadow:
+          1px 1px 3px rgba(174, 174, 192, 0.3),
+          -1px -1px 3px rgba(255, 255, 255, 0.8);
+        transform: translateY(-1px);
+        border: 2px solid transparent;
+      }
+
+      @include mixins.respond(phone) {
+        width: 100%;
+        font-size: 1.6rem;
+      }
     }
 
-    @include mixins.respond(phone) {
-      width: 100%;
-      font-size: 1.6rem;
+    .error-message {
+      color: red;
+      padding-top: 5px;
     }
-  }
-
-  .error-message {
-    color: red;
-    padding-top: 5px;
   }
 }
