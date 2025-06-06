@@ -27,6 +27,9 @@ Meu foco está em desenvolver experiências incríveis, seja no **front-end**, c
 - **[Projeto 2 - Site Loja Presentes](https://github.com/Isaque16/SiteLojaPresentes)**  
   Este é um projeto de E-commerce construído com Next.js. O sistema permite o gerenciamento completo de produtos, clientes e pedidos. Além de apresentar produtos e processar compras
 
+- **Projeto 3 - CMS**
+  Este Gerenciador de Conteúdo foi desenvolvido pelo time Moto G da turma 6 do projeto de capacitação full-stack <a href='https://www.instagram.com/webacademy.ufac/'>Web Academy</a>. Ele contém recursos desenvolvidos pela equipe durante o curso
+
 ---
 
 ## 🚀 **Como Acessar Meu Portfólio**
